@@ -70,13 +70,13 @@ javac命令的用途是将.java文件编译为.class文件。
 
 - 尝试直接编译Main.java
 ```shell
-javac ./java/Main.java
+$ javac ./java/Main.java
 ```
   结果提示编译失败，找不到Main.java中所引用的`lib`和`lib.Func`符号。
 
 - 将Main.java和Func.java一起编译
 ```shell
-javac ./java/Main.java ./java/lib/Func.java
+$ javac ./java/Main.java ./java/lib/Func.java
 ```
 编译成功，.class文件生成在了.java文件所在目录，成功后的./java目录结构如下
 ```
@@ -89,12 +89,12 @@ javac ./java/Main.java ./java/lib/Func.java
 ```
 如果有很多.java文件，不必将每个.java文件都输入，以下命令可以起到相同效果
 ```shell
-javac ./java/**/*.java
+$ javac ./java/**/*.java
 ```
 
 - 指定-sourcepath参数
 ```shell
-javac -sourcepath ./java ./java/Main.java
+$ javac -sourcepath ./java ./java/Main.java
 ```
 编译成功，结果与上两个命令的相同。可以观察到，指定-sourcepath参数后，不需要再输入所有.java文件，只需要输入包含主方法类的Main.java了。在这个实验中，指定了-sourcepath为./java，因此编译Main.java时，在./java下寻找引用的符号`lib.Func`（lib包下的Func类），于是从./java目录开始，寻找lib/Func.java。
 
@@ -102,7 +102,7 @@ javac -sourcepath ./java ./java/Main.java
 
 习惯上开发者不会将.class文件和.java文件混杂着放在一起，而是会将二者分开，放在不同的位置。以下命令尝试编译并用-d参数将生成的.class文件放置在./classes下
 ```shell
-javac -sourcepath ./java -d ./classes ./java/Main.java
+$ javac -sourcepath ./java -d ./classes ./java/Main.java
 ```
 编译成功，.class文件生成在了./classes下，其组织结构与对应的.java文件相同。成功后的目录结构如下
 ```
@@ -132,7 +132,7 @@ javac -sourcepath ./java -d ./classes ./java/Main.java
 ```
 并使用以下命令
 ```shell
-javac -classpath ./classes -d ./classes ./java/Main.java
+$ javac -classpath ./classes -d ./classes ./java/Main.java
 ```
 编译成功，Main.class生成在了预期位置，成功后的目录结构如下
 ```
@@ -169,11 +169,11 @@ java命令要输入含主方法类的全类名。在本实验中，因为Main.ja
 
 尝试运行.class文件
 ```shell
-java Main
+$ java Main
 ```
 提示错误找不到或无法加载主类，尝试使用-classpath参数把Main类所在目录加入classpath，再运行
 ```shell
-java -classpath ./classes Main
+$ java -classpath ./classes Main
 ```
 程序正确执行，执行结果与预期一致。需要注意的是，运行Main.class需要依赖Func.class，但lib/Func.class（全类名为`lib.Func`）是在./classes下的，所以java命令能在classpath中找到`lib.Func`，程序能正确执行。
 
@@ -201,11 +201,11 @@ jar命令的用途是归档创建jar文件或提取jar文件中内容。
 
 在实验目录下创建artifact目录
 ```shell
-mkdir artifact
+$ mkdir artifact
 ```
 通过以下命令将之前实验生成的.class文件打包为jar包，放置在./artifact下
 ```shell
-jar -cvf ../artifact/main.jar -C ./classes .
+$ jar -cvf ../artifact/main.jar -C ./classes .
 ```
 参数-C ./classes .代表将./classes下的所有文件归档，并在归档后的jar文件内目录结构中，将./classes路径更名为.路径，这样归档后，Main.class可以暴露在jar文件内目录结构第一层。
 完成后，实验目录结构如下
@@ -224,22 +224,22 @@ jar -cvf ../artifact/main.jar -C ./classes .
 ```
 查看main.jar的内容，可以用软件例如WinRAR打开以查看，或者使用如下命令查看
 ```shell
-jar -tvf ./artifact/main.jar
+$ jar -tvf ./artifact/main.jar
 ```
 观察到归档后jar命令自动添加了META-INF/MANIFEST.MF文件，这是jar文件中自带的清单文件，声明了该jar包的一些信息。
 
 java命令可以将jar文件添加到classpath中来查找类，因此尝试如下命令来在main.jar中找到实验程序并运行
 ```shell
-java -classpath ./artifact/main.jar Main
+$ java -classpath ./artifact/main.jar Main
 ```
 运行成功。习惯上，开发者会将主类信息写在jar文件中的清单文件中，以便使用该jar文件运行程序时不需要手动输入主类的全类名。可以自己在./classes下创建一个清单文件，写入“Main-Class: Main”，然后在归档时指定用该清单文件里的内容创建清单文件，使用如下命令在归档时指定利用清单文件里的信息
 ```shell
-echo “Main-Class: Main” > ./mymanifest
-jar -cvfm ./artifact/main.jar ./mymanifest -C ./classes .
+$ echo “Main-Class: Main” > ./mymanifest
+$ jar -cvfm ./artifact/main.jar ./mymanifest -C ./classes .
 ```
 使用如下命令，运行main.jar而不指定主类全类名
 ```shell
-java -jar ./artifact/main.jar
+$ java -jar ./artifact/main.jar
 ```
 运行成功。
 
