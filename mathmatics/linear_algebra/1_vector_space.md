@@ -1,7 +1,7 @@
 # 1 向量空间
 
-提醒：github显示markdown中的数学公式需要安装相应插件，插件全名为MathJax Plugin for Github。Chrome浏览器的插件下载地址为
-https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima/related
+提醒：github显示markdown中的数学公式需要安装相应插件，插件全名为GitHub Math Display。Chrome浏览器上该插件下载地址为
+https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjiblcjagnpmdmlgmda
 .
 
 ## 1.A ${\bf R}^n$ 与 ${\bf C}^n$
@@ -26,24 +26,24 @@ https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmaf
 - 加法逆元（additive inverse） 略
 - 乘法逆元（multiplicative inverse）
 
-  对每个 $\alpha\in{\bf C},\ \alpha\not=0$ 都存在唯一的 $\beta\in{\bf C}$ 使得 $\alpha\beta=1$；
+  对每个 $\alpha\in{\bf C}$，$\alpha\not=0$ 都存在唯一的 $\beta\in{\bf C}$ 使得 $\alpha\beta=1$；
 
   证明：
-  假设 $\alpha=a+b{\rm i},\ \beta=c+d{\rm i}$，其中 $a,b,c,d\in{\bf R}$. 那么，结合复数乘法的定义可得
+  假设 $\alpha=a+b{\rm i}$，$\beta=c+d{\rm i}$，其中 $a,b,c,d\in{\bf R}$. 那么，结合复数乘法的定义可得
   $$\alpha\beta=(a+b{\rm i})(c+d{\rm i})$$
-  $$=(ac-bd)+(ad+bc){\rm i}=1$$
+  $$=(ac-bd)+(ad+bc){\rm i}=1,$$
   可得到二元一次方程组
   $$
   \begin{cases}
-  ac-bd=1\\
-  bc+ad=0\\ 
+  ac-bd=1,\\
+  bc+ad=0,\\ 
   \end{cases}
   $$
   可解得
   $$
   \begin{cases}
-  c=\displaystyle{\frac{a}{a^2+b^2}}\\
-  d=\displaystyle{\frac{-b}{a^2+b^2}}\\
+  c=\displaystyle{\frac{a}{a^2+b^2}},\\
+  d=\displaystyle{\frac{-b}{a^2+b^2}},\\
   \end{cases}
   $$
   由 $\alpha\not=0$ 可得 $a,b$ 不会同时为 $0$，所以 $a^2+b^2\not=0$，所以 $c,d$ 唯一，结合复数定义可得 $\beta$ 唯一.
@@ -164,7 +164,7 @@ $$(x_1,\dots,x_n).$$
 
 - 思考
 
-  我仔细将本科时线代教材中对线形空间的定义与本书中对向量空间的定义对比，发现本书中的6条性质和线代教材中的8条公理是可以对应的，两个定义意思相同。在查找了相关资料后确定，线形空间和向量空间是同一个东西的不同叫法。只是在用一些书中，向量空间的定义比线性空间更局限一些。
+  我仔细将本科时线代教材中对线性空间的定义与本书中对向量空间的定义对比，发现本书中的6条性质和线代教材中的8条公理是可以对应的，两个定义意思相同。在查找了相关资料后确定，线性空间和向量空间是同一个东西的不同叫法。只是在用一些书中，向量空间的定义比线性空间更局限一些。
 
   上述性质中，加法有单位元和逆元，而乘法（数乘）只有单位元，于是我疑惑为什么乘法没有逆元的要求。我尝试模仿加法逆元的性质对乘法逆元作定义，却发现乘法逆元的定义需要定义 ${\bf F}^n$ 中元素与 ${\bf F}^n$ 中元素的乘法。书中已经写到，其实可以通过类似的方式定义这种乘法，但经验表明这样的定义对我们的目标是没用的。进一步查找了相关资料，有的资料用群论解释为什么不定义这种乘法，所以我不再深入。
 
