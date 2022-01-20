@@ -1,12 +1,16 @@
 # 1 向量空间
 
+提醒：github显示markdown中的数学公式需要安装相应插件，插件全名为MathJax Plugin for Github。Chrome浏览器的插件下载地址为
+https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima/related
+.
+
 ## 1.A ${\bf R}^n$ 与 ${\bf C}^n$
 
-### 1.1 定义 <font face="楷体-简">复数</font> （complex number）
-- 一个<font face="楷体-简">复数</font>是一个有序对 $(a,b)$，其中 $a,b\in{\bf R}$，但我们把它写成 $a+b{\rm i}$.
+### 1.1 定义 <font face="楷体">复数</font> （complex number）
+- 一个<font face="楷体">复数</font>是一个有序对 $(a,b)$，其中 $a,b\in{\bf R}$，但我们把它写成 $a+b{\rm i}$.
 - 所有复数构成的集合记为 ${\bf C}$：
   $${\bf C}=\{a+b{\rm i}:a,b\in{\bf R}\}.$$
-- ${\bf C}$ 上的<font face="楷体-简">加法</font>和<font face="楷体-简">乘法</font>定义为
+- ${\bf C}$ 上的<font face="楷体">加法</font>和<font face="楷体">乘法</font>定义为
   $$(a+b{\rm i})+(c+d{\rm i})=(a+c)+(b+d){\rm i},$$
   $$(a+b{\rm i})(c+d{\rm i})=(ac-bd)+(ad+bc){\rm i},$$
   其中 $a,b,c,d\in{\bf R}$.
