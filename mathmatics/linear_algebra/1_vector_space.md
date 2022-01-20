@@ -80,7 +80,7 @@ https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmaf
 
   组的长度是有限的，是一个非负整数.
 
-  长为 $0$ 的组形如 $({\ })$.
+  长为 $0$ 的组形如 $(\;)$.
 
 <!-- 设 $n$ 是非负整数. 长度为 $n$ 的组是 $n$ 个有顺序的元素，这些元素用逗号隔开并且两端用括弧括起来（这些元素可以是数、其他组或者更抽象的东西）. 长度为n的组具有如下形式：
 $$(x_1,\dots,x_n).$$
