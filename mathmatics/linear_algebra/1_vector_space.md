@@ -33,15 +33,19 @@ https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmaf
   $$\alpha\beta=(a+b{\rm i})(c+d{\rm i})$$
   $$=(ac-bd)+(ad+bc){\rm i}=1$$
   可得到二元一次方程组
-  $$\begin{cases}
-  ac-bd=1 \\
-  bc+ad=0
-  \end{cases}$$
+  $$
+  \begin{cases}
+  ac-bd=1\\
+  bc+ad=0\\ 
+  \end{cases}
+  $$
   可解得
-  $$\begin{cases}
-  c=\displaystyle{\frac{a}{a^2+b^2}} \\
-  d=\displaystyle{\frac{-b}{a^2+b^2}}
-  \end{cases}$$
+  $$
+  \begin{cases}
+  c=\displaystyle{\frac{a}{a^2+b^2}}\\
+  d=\displaystyle{\frac{-b}{a^2+b^2}}\\
+  \end{cases}
+  $$
   由 $\alpha\not=0$ 可得 $a,b$ 不会同时为 $0$，所以 $a^2+b^2\not=0$，所以 $c,d$ 唯一，结合复数定义可得 $\beta$ 唯一.
 
   （在本书中的这个位置还没有提及到矩阵、行列式等概念，所以在证明方程组解唯一时，用了简单的代数消元法）
