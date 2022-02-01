@@ -12,4 +12,8 @@
     - [Redis](./database/nosql/redis)
       - [Redis基础](./database/nosql/redis/redis_basic.md)
       - [Redis与应用场景的结合](./database/nosql/redis/redis_application.md)
+- [数学](./mathmatics)
+  - [线性代数](./mathmatics/linear_algebra)
+    - [0-引言](./mathmatics/linear_algebra/0_intro.md)
+    - [1-向量空间](./mathmatics/linear_algebra/1_vector_space.md)
 - [README.md](./README.md)
