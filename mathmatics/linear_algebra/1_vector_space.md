@@ -42,8 +42,8 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
   可解得
   $$
   \begin{cases}
-  c=\displaystyle{\frac{a}{a^2+b^2}},\\
-  d=\displaystyle{\frac{-b}{a^2+b^2}},\\
+  \displaystyle{c=\frac{a}{a^2+b^2}},\\
+  \displaystyle{d=\frac{-b}{a^2+b^2}},\\
   \end{cases}
   $$
   由 $\alpha\not=0$ 可得 $a,b$ 不会同时为 $0$，所以 $a^2+b^2\not=0$，所以 $c,d$ 唯一，结合复数定义可得 $\beta$ 唯一.
@@ -179,8 +179,7 @@ $$(x_1,\dots,x_n).$$
   - ${\bf C}$ 上的向量空间称为复向量空间. 
 
 - 注意事项
-  
-  最简单的向量空间只含有一个点，即 ${\{0\}}$ 是向量空间.
+  最简单的向量空间只含有一个点，即 $\lbrace 0\rbrace$ 是向量空间.
 
 - 思考
 
@@ -253,6 +252,110 @@ $$(x_1,\dots,x_n).$$
   $$-(-v)+(-v)=0,$$
   由交换律和加法逆元定义，等式显然成立.
 
+- 2
 
+  设 $a\in{\bold F}$，$v\in V$，$av=0$. 证明 $a=0$ 或 $v=0$.
+
+  证明：
+  假设 $a\not=0$ 且 $v\not=0$，等式两端乘$\displaystyle{\frac{1}{a}}$，得
+  $$\displaystyle{(\frac{1}{a})av=(\frac{1}{a})0},$$
+  由结合律和向量乘以 $0$ 定理，可得
+  $$v=0,$$
+  与假设矛盾，故假设不成立，$a=0$ 或 $v=0$.
+
+- 3
+
+  设 $v,w\in V$，说明为什么有唯一的 $x\in V$ 使得 $v+3x=w$.
+
+  证明：
+  由结合律，交换律，可得
+  $$3x=w+(-v),$$
+  $$\displaystyle{x=\frac{1}{3}(w+(-v))},$$
+  由加法逆元唯一定理，$-v$ 唯一，所以 $x$ 唯一.
+
+- 4
+
+  空集不是向量空间. 1.19中列出的性质中只有一条是空集不满足的，请问是哪一条？
+
+  加法单位元.
+
+- 5
+
+  证明在向量空间的定义中，关于加法逆元的那个条件可替换为
+  $$对所有\;v\in V\;都有\;0v=0.$$
+
+  证明：
+  如果证明了两个条件相互之间是充分必要关系，那两个条件就是可以相互替换的。
+
+  充分性，
+  对每个 $v\in V$ 都存在 $w\in V$ 使得 $v+w=0$. 由向量空间基本性质中对 $(-1)v$ 必为 $v$ 的加法逆元的证明，可得 $v$ 的加法逆元 $w$ 等于 $(-1)v$，因此有 $v+(-v)=0$，再由分配性质，可得 $(1+(-1))v=0$，即 $0v=0$.
+
+  必要性，
+  同理，记 $v$ 的加法逆元为 $w$，由分配性质， $0v=0\Rightarrow (1+(-1))v=0\Rightarrow v+(-1)v=0$，将 $(-1)v$ 记为 $w$，就证明了对每个 $v\in V$ 都存在 $w\in V$ 使得 $v+w=0$.
+
+- 6
+
+  设 $\infty$ 和 $-\infty$ 是两个不同的对象，它们都不属于 ${\bf R}$. 根据记号就能猜出如何在 ${\bf R}\cup\lbrace\infty\rbrace\cup\lbrace-\infty\rbrace$ 上定义加法和标量乘法。具体来说，两个实数的加法和乘法按通常的实数运算法则定义，并且对 $t\in{\bf R}$ 定义
+  $$
+  t\infty=
+  \begin{cases}
+  -\infty,&若\;t<0,\\
+  0,&若\;t=0,\\
+  \infty,&若\;t>0,\\
+  \end{cases}
+  \;\;\;\;\;\;
+  t(-\infty)=
+  \begin{cases}
+  \infty,&若\;t<0,\\
+  0,&若\;t=0,\\
+  -\infty,&若\;t>0,\\
+  \end{cases} 
+  $$
+  $$
+  t+\infty=\infty+t=\infty,
+  \;\;\;\;\;\;\;\;
+  t+(-\infty)=(-\infty)+t=-\infty,
+  $$
+  $$
+  \infty+\infty=\infty,
+  \;\;\;\;\;\;
+  (-\infty)+(-\infty)=-\infty
+  \;\;\;\;\;\;
+  \infty+(-\infty)=0.
+  $$
+  试问 ${\bf R}\cup\lbrace\infty\rbrace\cup\lbrace-\infty\rbrace$ 是否为 ${\bf R}$ 上的向量空间？说明理由.
+
+  回答：
+  是.
+
+  证明：
+  已知 ${\bf R}$ 是 ${\bf R}$ 上的向量空间. 因此对于和“${\bf R}$ 是 ${\bf R}$ 上的向量空间”的证明中重复的证明部分作省略.
+
+  证明 ${\bf R}\cup\lbrace\infty\rbrace\cup\lbrace-\infty\rbrace$ 是向量空间即证明其满足向量空间6条性质.
+
+  交换性，
+  由题干中定义显然可得.
+
+  结合性，
+  由题干中定义和交换性，显然可得.
+
+  加法单位元，
+  加法单位元就是 $0$，由题干中定义，将 $0$ 代入 $t$，显然可得.
+
+  加法逆元，
+  对于 $\infty$，有 $-\infty$ 使得 $\infty+(-\infty)=0$，对于 $-\infty$，有 $\infty$ 使得 $(-\infty)+\infty=0$，
+  可得满足加法逆元.
+
+  乘法单位元，
+  乘法单位元就是 $1$，由题干中定义，将 $0$ 代入 $t$，显然可得.
+
+  分配性质，
+  对所有 $a,b\in {\bf R}$ 和 $t\in R$，由题干中定义，有
+  $$a(\infty+v)=\infty=a\infty+av,$$
+  $$a(\infty+\infty)=\infty=a\infty+a\infty,$$
+  $$(a+b)\infty=\infty=a\infty+b\infty,$$
+  上述几个式子中，易证明将 $\infty$ 替换成 $-\infty$ 式子同样成立，除此之外，还有
+  $$a(\infty+(-\infty))=0=a\infty+a(-\infty),$$
+  由上述所有式子和交换性，可得 ${\bf R}\cup\lbrace\infty\rbrace\cup\lbrace-\infty\rbrace$ 满足分配性质.
 
   
