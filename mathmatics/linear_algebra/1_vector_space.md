@@ -250,7 +250,7 @@ $$(x_1,\dots,x_n).$$
   证明：
   等式两边加上 $-v$，得到
   $$-(-v)+(-v)=0,$$
-  由交换律和加法逆元定义，等式显然成立.
+  由交换律和加法逆元唯一性质，等式显然成立.
 
 - 2
 
@@ -319,7 +319,7 @@ $$(x_1,\dots,x_n).$$
   $$
   \infty+\infty=\infty,
   \;\;\;\;\;\;
-  (-\infty)+(-\infty)=-\infty
+  (-\infty)+(-\infty)=-\infty,
   \;\;\;\;\;\;
   \infty+(-\infty)=0.
   $$
@@ -358,4 +358,62 @@ $$(x_1,\dots,x_n).$$
   $$a(\infty+(-\infty))=0=a\infty+a(-\infty),$$
   由上述所有式子和交换性，可得 ${\bf R}\cup\lbrace\infty\rbrace\cup\lbrace-\infty\rbrace$ 满足分配性质.
 
+## 1.C 子空间
+### 1.19 子空间（subspace）
+  - 定义
   
+    如果 $V$ 的子集 $U$（采用与 $V$ 相同的加法和标量乘法）也是向量空间，则称 $U$ 是 $V$ 的子空间.
+
+  - 条件（判断依据）
+
+    $V$ 的子集 $U$ 是 $V$ 的子空间当且仅当 $U$ 满足以下三个条件：
+  
+    - 加法单位元（additive identity）
+
+      $0\in U$;
+    - 加法封闭性（closed under addition）
+
+      $u,w\in U\rightarrow u+w\in U$;
+    - 标量乘法封闭性（closed under scalar multiplication）
+
+      $(a\in {\bf F}\land u\in U)\rightarrow au\in U$.
+
+ ### 1.20 子集的和（sum of subsets）
+研究向量空间时，我们一般更关心子空间，而不是任意子集。
+- 定义
+
+  设 $U_1,\dots,U_m$ 都是 $V$ 的子集，则 $U_1,\dots,U_m$ 的和定义为 $U_1,\dots,U_m$ 中元素所有可能的和所构成的集合，记作 $U_1+\dots+U_m$. 更确切地说，
+  $$U_1+\dots+U_m=\lbrace u_1+\dots+u_m:u_1\in U_1,\dots,u_m\in U_m\rbrace.$$
+
+- 注意事项
+
+  子空间的并一般不是子空间，所以通常讨论子空间的和而非子空间的并。
+
+### 1.21 子空间的和定理
+- 定理
+  
+  设 $U_1,\dots,U_m$ 都是 $V$ 的子空间，则 $U_1+\dots+U_m$ 是 $V$ 的包含 $U_1,\dots,U_m$ 的最小子空间.
+
+### 1.22 直和（direct sum）
+- 定义
+
+  设 $U_1,\dots,U_m$ 都是 $V$ 的子空间.
+  - 和 $U_1+\dots+U_m$ 称为直和，如果 $U_1+\dots+U_m$ 中的每个元素都可以唯一地表示成  $u_1+\dots+u_m$，其中每个 $u_j$ 属于 $U_j$.
+
+  - 若 $U_1+\dots+U_m$ 是直和，则用 $U_1\oplus\dots\oplus U_m$ 来表示 $U_1+\dots+U_m$，这里符号 $\oplus$ 表明此处的和是一个直和.
+
+- 条件
+
+  设 $U_1,\dots,U_m$ 都是 $V$ 的子空间. “$U_1+\dots+U_m$ 是直和”当且仅当“$0$ 表示成 $u_1+\dots+u_n$（其中每个 $u_j\in U_j$）的唯一方式是每个 $u_j$ 都等于 $0$”.
+
+- 简单条件（只适用于两个子空间直和）
+
+  设 $U$ 和 $W$ 都是 $V$ 的子空间，则 $U+W$ 是直和当且仅当 $U\cap W=\lbrace 0\rbrace$.
+
+- 思考
+
+  总的来说就是线性无关的概念。
+
+## 习题 1.C 
+
+略
