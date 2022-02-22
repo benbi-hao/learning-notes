@@ -1,5 +1,9 @@
 # 0 引言
 
+提醒：github显示markdown中的数学公式需要安装相应插件，插件全名为GitHub Math Display。Chrome浏览器上该插件下载地址为
+https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjiblcjagnpmdmlgmda
+.
+
 ## 简介
 
 该线代笔记参考了《Linear Algebra Done Right》<sup>[1]</sup>一书。
