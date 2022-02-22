@@ -72,7 +72,7 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 
 ### 2.7 多项式的次数（degree of a polynomial），${\rm deg}\;p$
 - 定义
-  - 对于多项式 $p\in{\cal P}({\bf F})$，若存在标量 $a_0,a_1,\dots,a_m\in{\bf F}$，其中 $a_m\not=0，使得对任意 $z\in{\bf F}$ 有$$p(z)=a_0+a_1z+\cdots+a_mz^m,$$
+  - 对于多项式 $p\in{\cal P}({\bf F})$，若存在标量 $a_0,a_1,\dots,a_m\in{\bf F}$，其中 $a_m\not=0$，使得对任意 $z\in{\bf F}$ 有 $$p(z)=a_0+a_1z+\cdots+a_mz^m,$$
   则说 $p$ 的次数为 $m$. 若 $p$ 的次数为 $m$，则记 ${\rm deg}\;p=m$.
 
   - 规定恒等于 $0$ 的多项式的次数为 $-\infty$.
@@ -97,7 +97,7 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
   - 规定空组 $(\;)$ 是线性无关的.
 
 - 结论
-  - $v_1,\dots,v_m$ 线性无关当且仅当 ${\rm span}(v_1,\dots,v_m$)$ 中每个向量都可以唯一地表示成 $v_1,\dots,v_m$ 的线性组合.
+  - $v_1,\dots,v_m$ 线性无关当且仅当 ${\rm span}(v_1,\dots,v_m)$ 中每个向量都可以唯一地表示成 $v_1,\dots,v_m$ 的线性组合.
 
   - 一个线性无关组中去掉一些向量后，余下的向量构成的向量组仍线性无关.
 

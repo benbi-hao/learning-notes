@@ -15,5 +15,6 @@
 - [数学](./mathmatics)
   - [线性代数](./mathmatics/linear_algebra)
     - [0-引言](./mathmatics/linear_algebra/0_intro.md)
-    - [1-向量空间](./mathmatics/linear_algebra/1_vector_space.md)
+    - [1-向量空间](./mathmatics/linear_algebra/1_vector_spaces.md)
+    - [2-有限维向量空间](./mathmatics/linear_algebra/2_finite-dimensional_vector_spaces.md)
 - [README.md](./README.md)
