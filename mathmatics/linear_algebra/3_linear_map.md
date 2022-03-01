@@ -32,7 +32,7 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 
 - 例
 
-  略
+  零映射、恒等映射、微分、积分、乘以 $x^2$、从 ${\bf F}^{\infty}$ 到 $F^{\infty}$ 的向后移位、从 ${\bf F}^n$ 到 ${\bf F}^m$.
 
 ### 3.2 线性映射与定义域的基
 
@@ -126,7 +126,9 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 
 - 例
 
-  略
+  $T$ 是 $V$ 到 $W$ 的零映射，则 ${\rm null}\;T=V$.
+
+  从 ${\cal P}({\bf R})$ 到 ${\cal P}({\bf R})$ 的微分映射的零空间是常函数组成的集合.
 
 - 注意
 
@@ -168,7 +170,9 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 
 - 例
 
-  略
+  $T$ 是 $V$ 到 $W$ 的零映射，则 ${\rm range}\;T=\lbrace 0\rbrace$.
+
+  从 ${\cal P}({\bf R})$ 到 ${\cal P}({\bf R})$ 的微分映射的值域是 ${\cal P}({\bf R})$.
 
 - 结论
 
@@ -195,6 +199,10 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
   许多数学家采用映上这个术语，意思与满的相同.
 
   线性映射是不是满的与其映射到哪个向量空间有关.
+
+- 思考
+
+  与映射中的满射类似。
 
 ### 3.10 线性映射基本定理
 
@@ -427,6 +435,12 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
     也就是说，$Ac$ 是 $A$ 的诸列的线性组合，其中的标量来自 $c$.
 
   习题10和习题11中还给出了理解矩阵乘法的另外两种方式.
+
+- 思考
+
+  对矩阵的理解应当建立在对线性映射的理解之上，只了解矩阵和矩阵相关运算的定义，并使用机械化的数字证明去证明各种相关命题，未免太浅了.
+
+  一个矩阵可以为对一个线性映射的表示，矩阵乘法可以看作是两个线性映射的复合运算，等等.
 
 ## 习题 3.C
 
