@@ -324,8 +324,7 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
   $$
 
   $$
-  =
-  \left[
+  =\left[
   \begin{matrix}
   A_{1,1}+C_{1,1} & \dots & A_{1,n}+C_{1,n} \\
   \vdots & & \vdots \\
@@ -359,8 +358,7 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
   A_{m,1} & \dots & A_{m,n}
   \end{matrix}
   \right]
-  =
-  \left[
+  =\left[
   \begin{matrix}
   \lambda A_{1,1} & \dots & \lambda A_{1,n} \\
   \vdots & & \vdots \\
