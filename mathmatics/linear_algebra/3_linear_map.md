@@ -610,7 +610,7 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 
   $\mathbf{R}^2 \times \mathbf{R}^3$ 不等于 $\mathbf{R}^5$，但是二者是同构的.
 
-  将向量 $\big( (x_1,x_2),(x_3,x_4,x_5) \big)$ 变为 (x_1,x_2,x_3,x_4,x_5) 的线性映射显然是 $\mathbf{R}^2 \times \mathbf{R}^3$ 到 $\mathbf{R}^5$ 的同构. 这种同构非常自然，只是把元素换了种写法.
+  将向量 $\big( (x_1,x_2),(x_3,x_4,x_5) \big)$ 变为 $(x_1,x_2,x_3,x_4,x_5)$ 的线性映射显然是 $\mathbf{R}^2 \times \mathbf{R}^3$ 到 $\mathbf{R}^5$ 的同构. 这种同构非常自然，只是把元素换了种写法.
 
 ### 3.21 积与直和
 
@@ -626,7 +626,7 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 
 ### 3.22 $v+U$
 
-我们先兴义向量与子空间的和，以便引入商空间.
+我们先定义向量与子空间的和，以便引入商空间.
 
 - 定义
 
@@ -677,7 +677,7 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 
   - 若 $U$ 是 $\mathbf{R}^3$ 中包含原点的平面，则 $\mathbf{R}^3/U$ 是 $\mathbf{R}^3$ 中所有平行于 $U$ 的平面的集合.
 
-接下来的目标是使 $V/U$ 成为向量空间. 为此我们需要下面的命题
+接下来的目标是使 $V/U$ 成为向量空间. 为此我们需要下面的命题：
 
 - 结论
 
@@ -690,6 +690,8 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
     (b) $v+U=w+U$；
 
     (c) $(v+U)\cap(w+U)\not=\varnothing$.
+
+    证明：略.
 
 ### 3.25 $V/U$ 上的加法和标量乘法（addition and scalar multiplication on $V/U$）
 
