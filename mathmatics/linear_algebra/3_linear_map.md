@@ -731,4 +731,125 @@ $\pi$ 的确是线性映射，虽然 $\pi$ 同时依赖于 $U$ 和 $V$，但它�
 
     $$\mathrm{dim}\;V/U=\mathrm{dim}\;V-\mathrm{dim}\;{U}.$$
 
+    证明：用之前的结论证明 $\mathrm{null}\;\pi=U$，再用线性映射基本定理即可.
+
+$V$ 上的每个线性映射都诱导 $V/\mathrm{null}\;T$ 上的一个线性映射 $\tilde{T}$，现在就来定义它.
+
+### 3.27 $\tilde{T}$
+
+- 定义
+
+  设 $T \in \mathcal{V,W}$. 定义 $\tilde{T}:V/(\mathrm{null}\;T) \rightarrow W$ 如下：
+
+  $$\tilde{T}(v+\mathrm{null}\;T)=Tv.$$
+
+- 注意
+
+  为了证明上述定义是有意义的，需要先证明当 $u+\mathrm{null}\;T=v+\mathrm{null}\;T$ 时 $Tu=Tv$. 该证明略.
+
+- 结论
+
+  - $\tilde{T}$ 的零空间与值域
+
+    设 $T \in \mathcal{L}(V,W)$. 则
+
+    (a) $\tilde{T}$ 是 $V/(\mathrm{null}\;T)$ 到 $W$ 的线性映射；
+
+    (b) $\tilde{T}$ 是单的；
+
+    (c) $\mathrm{range}\;\tilde{T}=\mathrm{range}\;T$；
+
+    (b) $V/(\mathrm{null}\;T)$ 同构于 $\mathrm{range}\;T$.
+
     证明：
+
+    (a) 按定义证.
+
+    (b) 设 $v \in V$，$\tilde{T}(v+\mathrm{null}\;T)=0$，则 $Tv=0$，$v\in\mathrm{null}\;T$. 由之前的结论可得 $v+\mathrm{null}\;T=0+\mathrm{null}\;T$. 这表明 $\mathrm{null}\;\tilde{T}=\lbrace 0 \rbrace$，因此是单的.
+
+    (c) 由定义显然.
+
+    (d) (b)和(c)表明若将 $\tilde{T}$ 视为到 $\mathrm{range}\;T$ 的映射，则 $\tilde{T}$ 可以看作一个同构.
+
+- 思考
+
+  暂时不知道这个诱导出来的映射有什么用，可能只是想让巩固一下商映射的概念.
+
+## 习题 3.E
+
+略
+
+## 3.F 对偶
+
+映到标量域 $\mathbf{F}$ 的线性映射在线性代数中扮演了重要角色，因此它们有一个特别的名字：
+
+### 3.28 线性泛函（linear functional）
+
+- 定义
+
+  $V$ 上的线性泛函是从 $V$ 到 $\mathbf{F}$ 的线性映射. 也就是说，线性泛函是 $\mathcal{L}(V,\mathbf{F})$ 中的元素.
+
+- 例
+
+  - 取定 $(c_1,\dots,c_n) \in \mathbf{F}^n$. 定义 $\varphi:\mathbf{F}^n \rightarrow \mathbf{F}$ 为 $\varphi(x_1,\dots,x_n)=c_1x_1+\cdots+c_nx_n$. 则 $\varphi$ 是 $\mathbf{F}^n$ 上的线性泛函.
+
+  - 定义 $\varphi:\mathcal{P}(\mathbf{R}) \rightarrow \mathbf{R}$ 为 $\varphi(p)=3p''(5)+7p(4)$. 则 $\varphi$ 是 $\mathcal{P}(\mathbf{R})$ 上的线性泛函.
+
+  - 定义 $\varphi:\mathcal{P}(\mathbf{R}) \rightarrow \mathbf{R}$ 为 $\varphi(p)=\int_0^1p(x)\mathrm{d}x$. 则 $\varphi$ 是 $\mathcal{P}(\mathbf{R})$ 上的线性泛函.
+
+向量空间 $\mathcal{L}(V,\mathbf{F})$ 也有一个特别的名字和一个特别的记号：
+
+### 3.29 对偶空间（dual space），$V'$
+
+- 定义
+
+  $V$ 上的所有线性泛函构成的向量空间称为 $V$ 的对偶空间，记为 $V'$. 也就是说，$V'=\mathcal{L}(V,\mathbf{F})$.
+
+- 结论
+
+  - $\mathrm{dim}\;V'=\mathrm{dim}\;V$
+
+    设 $V$ 是有限维的. 则 $V'$ 也是有限维的，且 $\mathrm{dim}\;V'=\mathrm{dim}\;V$.
+
+    证明：可由矩阵维数的结论得到. 
+
+上述结论的证明对于帮助理解对偶空间的维数可能没有下面的定义直观.
+
+### 3.30 对偶基
+
+- 定义
+
+    设 $v_1,\dots,v_n$ 是 $V$ 的基，则 $v_1,\dots,v_n$ 的对偶基是 $V'$ 中的元素组 ${\varphi}_1,\dots,{\varphi}_n$，其中每个 ${\varphi}_j$ 都是 $V$ 上的线性泛函，使得
+
+    $${\varphi}_j(v_k)=
+    \begin{cases}
+    1, & 当\;k=j, \\
+    0, & 当\;k\not=j.
+    \end{cases}
+    $$
+
+- 例
+
+  $\mathbf{F}^n$ 的标准基 $e_1,\dots,e_n$ 的对偶基. 对于 $1 \leq j \leq n$，定义 ${\varphi}_j$ 是 $\mathbf{F}^n$ 上的线性泛函，它将 $\mathbf{F}^n$ 中的向量变为它的第 $j$ 个坐标. 也就是说，对于 $(x_1,\dots,x_n) \in \mathbf{F}^n$，
+
+  $${\varphi}_j(x_1,\dots,x_n)=x_j.$$
+
+  易证明这一组线性泛函就是 $\mathbf{F}^n$ 的标准基 $e_1,\dots,e_n$ 的对偶基.
+
+- 结论
+
+  - 对偶基是对偶空间的基
+
+    设 $V$ 是有限维的. 则 $V$ 的一个基的对偶基是 $V'$ 的基.
+
+    证明：略.
+
+在下面的定义中，若 $T$ 是 $V$ 到 $W$ 的线性映射，则 $T'$ 是 $W'$ 到 $V'$ 的线性映射.
+
+### 3.31 对偶映射（dual map），$T'$
+
+- 定义
+
+  若 $T \in \mathcal{L}(V,W)$，则 $T$ 的对偶映射是线性映射 $T' \in \mathcal{L}(W',V')$：对于 $\varphi \in W'$，$T'(\varphi)=\varphi \circ T$.
+
+按照定义，$T'(\varphi)$ 是 $V$ 到 $\mathbf{F}$ 的线性映射，也就是说，$T'(V) \in V'$.
