@@ -445,3 +445,288 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 ## 习题 3.C
 
 略
+
+## 3.D 可逆性与同构的向量空间
+
+### 3.16 可逆（invertible），逆（inverse）
+
+- 定义
+
+  - 线性映射 $T \in \mathcal{L}(V,W)$ 称为可逆的，如果存在线性映射 $S \in \mathcal{L}(W,V)$ 使得 $ST$ 等于 $V$ 上的恒等映射且 $TS$ 等于 $W$ 上的恒等映射.
+
+  - 满足 $ST=I$ 和 $TS=I$ 的线性映射 $S \in \mathcal{L}(W,V)$ 称为 $T$ 的逆（注意，第一个 $I$ 是 $V$ 上的恒等映射，第二个 $I$ 是 $W$ 上的恒等映射）.
+
+- 结论
+
+  - 逆是唯一的
+
+    可逆的线性映射有唯一的逆.
+
+  - 可逆性等价于单性和满性
+
+    一个线性映射是可逆的当且仅当它既是单的又是满的.
+
+- 记号 $T^{-1}$
+
+  若 $T$ 可逆，则它的逆记为 $T^{-1}$. 也就是说，如果 $T \in \mathcal{L}(V,W)$ 可逆，则 $T^{-1}$ 是 $\mathcal{L}(W,V)$ 中唯一一个使得 $T^{-1}T=I$ 且 $TT^{-1}=I$ 的元素.
+
+### 3.17 同构（isomorphism）、同构的（isomorphic）
+
+- 定义
+
+  - 同构就是可逆的线性映射.
+
+  - 若两个向量空间之间存在一个同构，则称这两个向量空间是同构的.
+
+- 结论
+
+  - 维数反映了向量空间是否同构
+
+    $\mathbf{F}$ 上两个有限维向量空间同构当且仅当其维数相同.
+
+  - $\mathcal{L}(V,W)$ 与 $\mathbf{F}^{m,n}$ 同构
+
+    设 $v_1,\dots,v_n$ 是 $V$ 的基，$w_1,\dots,w_m$ 是 $W$ 的基，则 $\mathcal{M}$ 是 $\mathcal{L}(V,W)$ 与 $\mathbf{F}^{m,n}$ 之间的一个同构.
+
+  - $\mathrm{dim}\;\mathcal{L}(V,W)=(\mathrm{dim}\;V)(\mathrm{dim}\;W)$
+
+    设 $V$ 和 $W$ 都是有限维的，则 $\mathcal{L}(V,W)$ 是有限维的且
+
+    $$\mathrm{dim}\;\mathcal{L}(V,W)=(\mathrm{dim}\;V)(\mathrm{dim}\;W).$$
+
+### 3.18 向量的矩阵（matrix of a vector），$\mathcal{M}(v)$
+
+- 定义
+
+  设 $v \in V$，并设 $v_1,\dots,v_n$ 是 $V$ 的基. 则规定 $v$ 关于这个基的矩阵是 $n \times 1$ 矩阵
+
+  $$\mathcal{M}(v)=
+  \left[
+  \begin{matrix}
+  c_1 \\
+  \vdots \\
+  c_n
+  \end{matrix}
+  \right]
+  ,$$
+
+  这里 $c_1,\dots,c_n$ 是使得下式成立的标量：
+
+  $$v=c_1v_1+\cdots+c_nv_n.$$
+
+- 注意
+
+  向量 $v \in V$ 的矩阵 $\mathcal{M}(v)$ 与 $V$ 的基 $v_1,\dots,v_n$ 有关，也与向量 $v$ 有关. 然而，基通常是上下文自明的，所以就不把基包括在记号中了.
+
+- 结论
+
+  - $\mathcal{M}(T)_{\cdot,k}=\mathcal{M}(Tv_k)$
+
+    设 $T \in \mathcal{L}(V,W)$，$v_1,\dots,v_n$ 是 $V$ 的基，$w_1,\dots,w_m$ 是 $W$ 的基. 设 $1 \leq k \leq n$. 则 $\mathcal{M}(T)$ 的第 $k$ 列（记为 $\mathcal{M}(T)_{\cdot,k}$）等于 $\mathcal{M}(Tv_k)$.
+
+  - 线性映射的作用类似于矩阵乘
+
+    设 $T \in \mathcal{L}(V,W)$，$v \in V$. 设 $v_1,\dots,v_n$ 是 $V$ 的基，$w_1,\dots,w_m$ 是 $W$ 的基. 则
+
+    $$\mathcal{M}(Tv)=\mathcal{M}(T)\mathcal{M}(v).$$
+
+上一个结论允许我们（通过同构）将一个线性映射视为 $\mathbf{F}^{n,1}$ 上某个矩阵 $A$ 的矩阵乘，所以要牢记这个矩阵 $A$ 不仅依赖于线性映射也依赖于基的选取. 后续章节中很多最重要结果的主旨之一就是如何选取基以使矩阵 $A$ 尽可能简单.
+
+本书主要关注线性映射而不是矩阵. 不过有时将线性映射想象为矩阵会提供重要的直觉.
+
+### 3.19 算子（operator），$\mathcal{L}(V)$
+
+- 定义
+
+  - 向量空间到其自身的线性映射称为算子.
+
+  - 记号 $\mathcal{L}(V)$ 表示 $V$ 上全体算子所组成的集合. 即 $\mathcal{L}(V)=\mathcal{L}(V,V)$.
+
+- 结论
+
+  - 在有限维的情形，单性等价于满性
+
+    设 $V$ 是有限维的，并设 $T \in \mathcal{L}(V)$，则以下陈述等价：
+
+    (a) $T$ 是可逆的；
+
+    (b) $T$ 是单的；
+
+    (c) $T$ 是满的.
+
+    证明：
+
+    (a)显然蕴涵(b). (b)蕴涵(c)可以由线性映射基本定理得到，同样(c)也蕴涵(b)，所以(b)和(c)蕴涵(a).
+
+上述结论只在有限维情形下满足，不适用于无限维.
+
+- 例
+
+  单或满都不蕴涵可逆：
+  
+  $\mathcal{P}(\mathbf{R})$ 上乘以 $x^2$ 的映射是单的，但不是满的. 
+  
+  $\mathbf{F}^{\infty}$ 上的向后移位算子是满的，单不是单的.
+
+## 习题 3.D
+
+略
+
+## 3.E 向量空间的积与商
+
+通常在处理多个向量空间时，这些向量空间都应当在同一个域上.
+
+### 3.20 向量空间的积（product of vector spaces）
+
+- 定义
+
+  设 $V_1,\dots,V_m$ 均为 $\mathbf{F}$ 上的向量空间.
+
+  - 规定积 $V_1 \times \cdots \times V_m$ 为
+
+    $$V_1 \times \cdots \times V_m=\lbrace (v_1,\dots,v_m):v_1 \in V_1,\dots,v_m \in V_m \rbrace.$$
+
+  - 规定 $V_1 \times \cdots \times V_m$ 上的加法为
+
+    $$(u_1,\dots,u_m)+(v_1,\dots,v_m)=(u_1+v_1,\dots,u_m+v_m).$$
+
+  - 规定 $V_1 \times \cdots \times V_m$ 上的标量乘法为
+
+    $$\lambda(v_1,\dots,v_m)=(\lambda v_1,\dots,\lambda v_m).$$
+
+- 结论
+
+  - 向量空间的积是向量空间
+
+    设 $V_1,\dots,V_m$ 均为 $\mathbf{F}$ 上的向量空间，则 $V_1 \times \cdots \times V_m$ 是 $\mathbf{F}$ 上的向量空间.
+
+  - 积的维数等于维数的和
+
+    设 $V_1,\dots,V_m$ 均为有限维向量空间. 则 $V_1 \times \cdots \times V_m$ 是有限维的，且
+
+    $$\mathrm{dim}(V_1 \times \cdots \times V_m)=\mathrm{dim}\;V_1 + \cdots + \mathrm{dim}\;V_m.$$
+
+- 例
+
+  $\mathbf{R}^2 \times \mathbf{R}^3$ 不等于 $\mathbf{R}^5$，但是二者是同构的.
+
+  将向量 $\big( (x_1,x_2),(x_3,x_4,x_5) \big)$ 变为 (x_1,x_2,x_3,x_4,x_5) 的线性映射显然是 $\mathbf{R}^2 \times \mathbf{R}^3$ 到 $\mathbf{R}^5$ 的同构. 这种同构非常自然，只是把元素换了种写法.
+
+### 3.21 积与直和
+
+- 命题
+
+  - 积与直和
+
+    设 $U_1,\dots,U_m$ 均为 $V$ 的子空间. 线性映射 $\Gamma:U_1 \times \cdots \times U_m \rightarrow U_1 + \cdots + U_m$ 定义为 $\Gamma(u_1,\dots,u_m)=u_1+\cdots+u_m$. 则 $U_1+\cdots+U_m$ 是直和当且仅当 $\Gamma$ 是单射.
+
+  - 积为直和当且仅当维数相加
+
+    设 $V$ 是有限维的，且 $U_1,\dots,U_m$ 均为 $V$ 的子空间. 则 $U_1+\cdots+U_m$ 是直和当且仅当 $\mathrm{dim}(U_1+\cdots+U_m)=\mathrm{dim}\;U_1+\cdots+\mathrm{dim}\;U_m$.
+
+### 3.22 $v+U$
+
+我们先兴义向量与子空间的和，以便引入商空间.
+
+- 定义
+
+  设 $v \in V$，$U$ 是 $V$ 的子空间. 则 $v+U$ 是 $V$ 的子集，定义如下：
+
+  $$v+U=\lbrace v+u:u\in U \rbrace.$$
+
+- 例
+
+  设
+  
+  $$U=\lbrace (x,2x) \in \mathbf{R}^2 : x \in \mathbf{R} \rbrace.$$
+
+  则 $U$ 是 $\mathbf{R}^2$ 中过原点的斜率为 $2$ 的直线.
+
+  于是
+
+  $$(17,20)+U$$
+
+  是 $\mathbf{R}^2$ 中包含点 $(17,20)$ 的斜率为 $2$ 的直线.
+
+### 3.23 仿射子集（affine subset）、平行（parallel）
+
+- 定义
+
+  - $V$ 的仿射子集是 $V$ 的形如 $v+U$ 的子集，其中 $v \in V$，$U$ 是 $V$ 的子空间.
+
+  - 对于 $v \in V$ 和 $V$ 的子空间 $U$，称仿射子集 $v+U$ 平行于 $U$.
+
+- 例
+
+  在上面的例子中，$\mathbf{R}^2$ 中所有斜率为 $2$ 的直线均平行于 $U$.
+
+- 注意
+
+  按照定义，$\mathbf{R}^3$ 中的直线和平面并不能平行. 直线只能与直线平行，平面只能与平面平行.
+
+### 3.24 商空间（quotient space），$V/U$
+
+- 定义
+
+  设 $U$ 是 $V$ 的子空间. 则商空间 $V/U$ 是指 $V$ 的所有平行于 $U$ 的仿射子集的集合. 也就是说，
+
+  $$V/U=\lbrace v+U:v\in V \rbrace.$$
+
+- 例
+  - 若 $U=\lbrace (x,2x) \in \mathbf{R}^2 : x \in \mathbf{R} \rbrace$，则 $\mathbf{R}^2/U$ 是 $\mathbf{R}^2$ 中所有斜率为 $2$ 的直线的集合.
+
+  - 若 $U$ 是 $\mathbf{R}^3$ 中包含原点的平面，则 $\mathbf{R}^3/U$ 是 $\mathbf{R}^3$ 中所有平行于 $U$ 的平面的集合.
+
+接下来的目标是使 $V/U$ 成为向量空间. 为此我们需要下面的命题
+
+- 结论
+
+  - 平行于 $U$ 的两个仿射子集或相等或不相交
+
+    设 $U$ 是 $V$ 的子空间，$v,w \in V$. 则以下陈述等价：
+
+    (a) $v-w \in U$；
+
+    (b) $v+U=w+U$；
+
+    (c) $(v+U)\cap(w+U)\not=\varnothing$.
+
+### 3.25 $V/U$ 上的加法和标量乘法（addition and scalar multiplication on $V/U$）
+
+- 定义
+
+  设 $U$ 是 $V$ 的子空间. 则 $V/U$ 上的加法和标量乘法定义为：对任意 $v,w \in V$ 和 $\lambda \in \mathbf{F}$，
+
+  $$(v+U)+(w+U)=(v+w)+U,$$
+
+  $$\lambda(v+U)=(\lambda v)+U.$$
+
+- 结论
+
+  - 商空间是向量空间
+
+    设 $U$ 是 $V$ 的子空间. 则 $V/U$ 按照上面定义的加法和标量乘法构成向量空间.
+
+    证明：需先证明定义的加法是有意义的，具体来说，设 $v,w \in V$，假设 $\hat{v},\hat{w} \in V$ 使得 $v+U=\hat{v}+U$ 和 $w+U=\hat{w}+U$. 要证明上面给出的 $V/U$ 上的加法是有意义的，必须证明 $(v+w)+U=(\hat{v}+\hat{w})+U$. 标量乘法同理. 剩下的就是向量空间证明.
+
+下面的概念将给出计算 $V/U$ 维数的简单方法.
+
+### 3.26 商映射（quotient map），$\pi$
+
+- 定义
+
+  设 $U$ 是 $V$ 的子空间. 商映射 $\pi$ 是如下定义的线性映射 $\pi:V \rightarrow V/U$：对任意 $v \in V$，
+
+  $$\pi(v)=v+U.$$
+
+$\pi$ 的确是线性映射，虽然 $\pi$ 同时依赖于 $U$ 和 $V$，但它们并未出现在记号中，这是因为它们在上下文中是自明的.
+
+- 结论
+
+  - 商空间的维数
+
+    设 $V$ 是有限维的，$U$ 是 $V$ 的子空间. 则
+
+    $$\mathrm{dim}\;V/U=\mathrm{dim}\;V-\mathrm{dim}\;{U}.$$
+
+    证明：
