@@ -853,3 +853,221 @@ $V$ 上的每个线性映射都诱导 $V/\mathrm{null}\;T$ 上的一个线性映
   若 $T \in \mathcal{L}(V,W)$，则 $T$ 的对偶映射是线性映射 $T' \in \mathcal{L}(W',V')$：对于 $\varphi \in W'$，$T'(\varphi)=\varphi \circ T$.
 
 按照定义，$T'(\varphi)$ 是 $V$ 到 $\mathbf{F}$ 的线性映射，也就是说，$T'(V) \in V'$.
+
+容易验证 $T'$ 是 $W'$ 到 $V'$ 的线性映射。
+
+- 思考
+
+  线性映射 $T$ 和其对偶映射 $T'$ 的关系如下：
+
+  ![对偶映射](./img/dual_map.png)
+
+- 例
+
+  定义 $D:\mathcal{P}(R) \rightarrow \mathcal{P}(R)$ 为 $Dp=p'$.
+
+  - 设 $\varphi$ 是 $\mathcal{P}(R)$ 上由 $\varphi(p)=p(3)$ 定义的线性泛函. 则 $D'(\varphi)$ 是 $\mathcal{P}(R)$ 上如下定义的线性泛函：
+
+    $$\big( D'(\varphi) \big)(p)=(\varphi \circ D)(p)=\varphi(Dp)=\varphi(p')=p'(3).$$
+
+    也就是说，$D'(\varphi)$ 是 $\mathcal{P}(\mathbf{R})$ 上将 $p$ 变为 $p'(3)$ 的线性泛函.
+
+  - 设 $\varphi$ 是 $\mathcal{P}(R)$ 上由 $\varphi(p)=\int_0^1 p(x) \mathrm{d}x$ 定义的线性泛函. 则 $D'(\varphi)$ 是 $\mathcal{P}(R)$ 上如下定义的线性泛函：
+
+    $$\big( D'(\varphi) \big)(p)=(\varphi \circ D)(p)=\varphi(Dp)=\varphi(p')=\int_0^1 p'(x) \mathrm{d}x=p(1)-p(0).$$
+
+    也就是说，$D'(\varphi)$ 是 $\mathcal{P}(\mathbf{R})$ 上将 $p$ 变为 $p(1)-p(0)$ 的线性泛函.
+
+- 结论
+
+  - 对偶映射的代数性质
+
+    - 对所有 $S,T \in \mathcal{L}(V,W)$ 有 $(S+T)'=S'+T'$.
+
+    - 对所有 $\lambda \in \mathbf{F}$ 和所有 $T \in \mathcal{L}(V,W)$ 有 $(\lambda T)'=\lambda T'$.
+
+    - 对所有 $T \in \mathcal{L}(V,W)$ 和所有 $S \in \mathcal{L}(V,W)$ 有 $(ST)'=T'S'$.
+
+上面结论的前两条表明将 $T$ 变为 $T'$ 的映射是 $\mathcal{L}(V,W)$ 到 $\mathcal{L}(W',V')$ 的线性映射.
+
+为了利用 $\mathrm{range}\;T$ 和 $\mathrm{null}\;T$ 来描述 $\mathrm{null}\;T'$ 和 $\mathrm{range}\;T'$. 我们需要下面的定义.
+
+### 3.32 零化子（annihilator），$U^0$
+
+- 定义
+
+  对于 $U \in V$，$U$ 的零化子（记为 $U^0$）定义如下：
+
+  $$U^0=\lbrace \varphi \in V' : 对所有\;u \in U\;都有\;\varphi(u)=0 \rbrace.$$
+
+- 注意
+
+  对于 $U \subset V$，零化子 $U^0$ 是对偶空间 $V'$ 的子集. 于是 $U^0$ 依赖于包含 $U$ 的向量空间，所以记号 $U_V^0$ 应该更准确. 然而包含 $U$ 的向量空间通常在上下文中是自明的，所以我们采用更简单的记号 $U^0$.
+
+- 例
+
+  用 $e_1,e_2,e_3,e_4,e_5$ 表示 $\mathbf{R}^5$ 的标准基，用 ${\varphi}_1,{\varphi}_2,{\varphi}_3,{\varphi}_4,{\varphi}_5$ 表示 $(\mathbf{R}^5)'$ 的对偶基. 设
+
+  $$U=\mathrm{span}(e_1,e_2)=\lbrace (x_1,x_2,0,0,0) \in \mathbf{R}^5 : x_1,x_2 \in \mathbf{R} \rbrace.$$
+
+  证明 $U^0=\mathrm{span}({\varphi}_3,{\varphi}_4,{\varphi}_5)$.
+
+  证明过程略，总体思路为证明 $U^0$ 和 $\mathrm{span}({\varphi}_3,{\varphi}_4,{\varphi}_5)$ 相互之间为子集关系，从而两个集合相等.
+
+- 结论
+
+  - 零化子是子空间
+
+    设 $U \subset V$，则 $U_0$ 是 $V'$ 的子空间.
+
+  - 零化子的维数
+
+    设 $V$ 是有限维的，$U$ 是 $V$ 的子空间. 则
+
+    $$\mathrm{dim}\;U+\mathrm{dim}\;U^0=\mathrm{dim}\;V.$$
+
+    证明：
+
+    该命题可以仿照上面给出的例子证明. 上例中的证明只针对 $\mathbf{R}^5$ 的标准基和其对偶基，事实上其证明可以推广到任意有限维向量空间的任意基，因此可以得到 $U$ 和 $U^0$ 的基刚好“错开”的结论，于是该命题的证.
+
+    具体来说，可以先选择 $U$ 的一组基，将其扩充为 $V$ 的基. 设出其对偶基，然后证明不是 $U$ 的基的那部分基的对偶基是 $U^0$ 的基.
+
+  - $T'$ 的零空间
+
+    设 $V$ 和 $W$ 都是有限维，$T \in \mathcal{L}(V,W)$. 则
+
+    (a) $\mathrm{null}\;T'=(\mathrm{range}\;T)^0$；
+
+    (b) $\mathrm{dim}\;\mathrm{null}\;T'=\mathrm{dim}\;\mathrm{null}\;T+\mathrm{dim}\;W-\mathrm{dim}\;V$.
+
+    证明：
+
+    略. 思路是根据定义、线性映射基本定理和上面的结论证明. 需要注意的是证明集合相等可以通过证明两个方向的子集关系得到.
+
+  - $T$ 是满的等价于 $T'$ 是单的
+
+    设 $V$ 和 $W$ 都是有限维的，$T \in \mathcal{L}(V,W)$. 则 $T$ 是满的当且仅当 $T'$ 是单的.
+
+    证明：
+
+    略.
+
+    思考：
+
+    直观上看，$T$ 如果不是满的，那么 $W$ 中一定会有一部分基与 $T$ 的值域的基线性无关，这部分基的对偶基张成的空间会被 $T'$ 映射到 $V'$ 中的 $0$.
+
+  - $T'$ 的值域
+
+    设 $V$ 和 $W$ 都是有限维的，$T \in \mathcal{L}(V,W)$. 则
+
+    (a) $\mathrm{dim}\;\mathrm{range}\;T'=\mathrm{dim}\;\mathrm{range}\;T$；
+
+    (b) $\mathrm{range}\;T'=(\mathrm{null}\;T)^0$.
+
+    证明：
+
+    略.
+
+    思考：
+
+    (a) $T$ 映射为几维，$T'$ 就映射为几维.
+
+    (b) $T'$ 的值域中的元素，就是会将 $T$ 零空间中元素映到 $0$ 的线性泛函.
+
+    将(b)与 $T'$ 的零空间结论中的(a)结合在一起会更容易理解一些.
+
+  - $T$ 是单的等价于 $T'$ 是满的
+
+    设 $V$ 和 $W$ 都是有限维的，$T \in \mathcal{L}(V,W)$. 则 $T$ 是单的当且仅当 $T'$ 是满的.
+
+    证明：
+
+    略.
+
+- 思考
+
+  结论的证明是严谨的，但是还是过于抽象，浮于数字符号的表达.
+
+  有一个比较好的方法是例举一些特殊情况来理解结论，例如用标准基和其对偶基尝试模拟映射过程，观察结论是否成立.
+
+  例如上面的关于 $T'$ 的零空间的结论，在经过我自己的一番观察后，我觉得可以用以下表述：
+
+  (a) 在 $W'$ 中 $T$ 的值域的零化子，就是会被 $T'$ 映射为 $V'$ 中 $0$ 的元素.
+
+  (b) $T$ 和 $T'$ 零空间维数差等于 $W$ 和 $V$ 的维数差.
+
+  尽管还是抽象，但是对我的理解有很大帮助.
+
+现在我们定义矩阵的转置.
+
+### 3.33 转置（transpose），$A^{\mathrm{t}}$
+
+- 定义
+
+  矩阵 $A$ 的转置（记为 $A^{\mathrm{t}}$）是通过互换 $A$ 的行和列的角色所得到的矩阵. 确切地说，若 $A$ 是 $m \times n$ 矩阵，则 $A^{\mathrm{t}}$ 是 $n \times m$ 矩阵，其元素由下面的等式给出：
+
+  $$(A^{\mathrm{t}})_{k,j}=A_{j,k}.$$
+
+- 结论
+
+  - 矩阵乘积的转置
+
+    若 $A$ 是 $m \times n$ 矩阵，$C$ 是 $n \times p$ 矩阵，则
+
+    $$(AC)^{\mathrm{t}}=C^{\mathrm{t}}A^{\mathrm{t}}.$$
+
+  对以下命题，我们假定由 $V$ 的基 $v_1,\dots,v_n$ 及 $V'$ 的对偶基 ${\varphi}_1,\dots,{\varphi}_n$，并假定有 $W$ 的基 $w_1,\dots,w_m$ 及 $W'$ 的对偶基 ${\psi}_1,\dots,{\psi}_m$.
+
+  - $T'$ 的矩阵是 $T$ 的矩阵的转置
+
+    设 $T \in \mathcal{L}(V,W)$，则 $\mathcal{M}(T')=\big( \mathcal{M}(T) \big)^{\mathrm{t}}$.
+
+    证明：
+
+    由 $\mathcal{M}(T')$ 定义有
+
+    $$T'({\psi}_j)=\sum_{r=1}^nC_{r,j}{\varphi}_r.$$
+
+    上式左端等于 ${\psi}_j \circ T$，于是等式两端作用到 $v_k$ 上得到
+
+    $$({\psi}_j \circ T)(v_k)=\sum_{r=1}^nC_{r,j}{\varphi}_r(v_k).$$
+
+    上式左式等于 $A_{j,k}$，右式等于 $C_{k,j}$，得 $C_{k,j}=A_{j,k}$，于是 $C=A^{\mathrm{t}}$.
+
+接下来定义矩阵有关的两个非负整数.
+
+### 3.34 行秩（row rank）、列秩（column rank）
+
+- 定义
+
+  设 $A$ 是元素属于 $\mathbf{F}$ 的 $m \times n$ 矩阵.
+
+  - $A$ 的行秩是 $A$ 的诸行在 $\mathbf{F}^{1,n}$ 中的张成空间的维数.
+
+  - $A$ 的列秩是 $A$ 的诸列在 $\mathbf{F}^{m,1}$ 中的张成空间的维数.
+
+- 结论
+
+  - $\mathrm{range}\;T$ 的维数等于 $\mathcal{M}(T)$ 的列秩
+
+    设 $V$ 和 $W$ 都是有限维的，$T \in \mathcal{L}(V,W)$. 则 $\mathrm{dim}\;\mathrm{range}\;T$ 等于 $\mathcal{M}(T)$ 的列秩.
+
+  - 行秩等于列秩
+
+    设 $A \in \mathbf{F}^{m,n}$，则 $A$ 的行秩等于 $A$ 的列秩.
+
+    证明：
+
+    $\mathrm{dim}\;\mathrm{range}\;T=\mathrm{dim}\;\mathrm{range}\;T'.$
+
+上述结论使得我们可以不区分“行秩”和“列秩”这两个术语，而直接使用更简单的术语“秩”.
+
+### 3.35 秩（rank）
+
+- 定义
+
+  矩阵的 $A \in \mathbf{F}^{m,n}$ 的秩定义为 $A$ 的列秩.
+
+## 习题 3.F
+
+略
