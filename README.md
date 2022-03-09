@@ -18,4 +18,5 @@
     - [1-向量空间](./mathmatics/linear_algebra/1_vector_spaces.md)
     - [2-有限维向量空间](./mathmatics/linear_algebra/2_finite-dimensional_vector_spaces.md)
     - [3-线性映射](./mathmatics/linear_algebra/3_linear_map.md)
+    - [4-多项式](./mathmatics/linear_algebra/4_polynomials.md)
 - [README.md](./README.md)
