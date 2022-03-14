@@ -100,7 +100,7 @@ $$w_1\overline{z_1}+\cdots+w_n\overline{z_n}.$$
 
   - 若 $c_1,\dots,c_n$ 均为正数，则可以定义 ${\bf F}^n$ 上的内积如下：
 
-    $$\langle (w_1,\dots,w_n),(z_1,\dots,z_n)=c_1w_1\overline{z_1}+\cdots+c_nw_n\overline{z_n} \rangle.$$
+    $$\langle (w_1,\dots,w_n),(z_1,\dots,z_n) \rangle=c_1w_1\overline{z_1}+\cdots+c_nw_n\overline{z_n}.$$
 
   - 在定义在区间 $[-1,1]$ 上的实值连续函数构成的向量空间上可定义内积如下：
 
@@ -309,3 +309,145 @@ $$w_1\overline{z_1}+\cdots+w_n\overline{z_n}.$$
   - 规范正交组扩充为规范正交基
 
     设 $V$ 是有限维的. 则 $V$ 中每个规范正交向量组都可以扩充成 $V$ 的规范正交基.
+
+  - 关于规范正交基的上三角矩阵
+
+    设 $T \in {\cal L}(V)$. 如果 $T$ 关于 $V$ 的某个基具有上三角矩阵，那么 $T$ 关于 $V$ 的某个规范正交基也具有上三角矩阵.
+
+    证明：用格拉姆-施密特过程和上三角矩阵的等价条件.
+
+  - 舒尔定理
+
+    设 $V$ 是有限维的复向量空间且 $T \in {\cal L}(V)$. 则 $T$ 关于 $V$ 的某个规范正交基有上三角矩阵.
+
+  - 里斯表示定理
+
+    设 $V$ 是有限维的且 $\varphi$ 是 $V$ 上的线性泛函，则存在唯一的向量 $u \in V$ 使得对每个 $v \in V$ 均有 $\varphi(v)=\langle v,u \rangle$.
+
+    证明：
+    先证明存在 $u \in V$ 使得对每个 $v \in V$ 均有 $\varphi(v)=\langle v,u \rangle$. 设 $e_1,\dots,e_n$ 是 $V$ 的规范正交基，则对每个 $v \in V$ 均有
+
+    $$\begin{aligned}
+    \varphi(v) &  =\varphi(\langle v,e_1 \rangle e_1 + \cdots + \langle v,e_n \rangle e_n) \\
+    & = \langle v,e_1 \rangle \varphi(e_1) + \cdots + \langle v,e_n \rangle \varphi(e_n) \\
+    & = \langle v,\overline{\varphi(e_1)}e_1 + \cdots + \overline{\varphi(e_n)}e_n \rangle,
+    \end{aligned}$$
+
+    因此，取
+    
+    $$u = \overline{\varphi(e_1)}e_1 + \cdots + \overline{\varphi(e_n)}e_n,$$
+
+    则对每个 $v \in V$ 都有 $\varphi(v)=\langle v,u \rangle$.
+
+    为了证明只有一个向量 $u \in V$ 满足条件，设 $u_1,u_2 \in V$ 使得对每个 $v \in V$ 均有
+
+    $$\varphi(v)=\langle v,u_1 \rangle=\langle v,u_2 \rangle.$$
+
+    则对每个 $v \in V$ 均有
+
+    $$0=\langle v,u_1 \rangle - \langle v,u_2 \rangle =\langle v,u_1-u_2 \rangle.$$
+
+    取 $v=u_1-u_2$ 可得 $u_1-u_2=0$，这就完成了唯一性的证明.
+
+    例：
+    如下定义的函数 $\varphi:{\cal P}_2({\bf R})\rightarrow {\bf R}$
+
+    $$\varphi(p)=\int_{-1}^1 p(t)\big(cos(\pi t)\big)\,{\rm d}t$$
+
+    是 ${\cal P}_2({\bf R})$ 上的线性泛函（这里 ${\cal P}_2({\bf R})$ 上的内积是 $[-1, 1]$ 上的两个函数相乘后做定积分）. 下面的事实并不显然：存在 $u \in {\cal P}_2({\bf R})$ 使得对任意 $p \in {\cal P}_2({\bf R})$ 均有
+
+    $$\varphi(p)=\langle p,u \rangle.$$
+
+    （我们不能取 $u(t)=\cos(\pi t)$，因为它不是 ${\cal P}_2({\bf R})$ 中的元素.）
+
+    用上面证明中的公式可得
+
+    $$u(x)=-\tfrac{45}{2\pi^2}(x^2-\tfrac{1}{3}).$$
+
+    看起来用公式得出的 $u$ 依赖于规范正交基 $e_1,\dots,e_n$ 和 $\varphi$. 然而，里斯表示定理告诉我们 $u$ 是由 $\varphi$ 唯一确定的. 所以与规范正交基的选取无关.
+
+    上面的例子显示了里斯表示定理的威力.
+
+## 习题 6.B
+
+略
+
+## 6.C 正交补与极小化问题
+
+### 6.9 正交补（orthogonal complement），$U^{\bot}$
+
+- 定义
+
+  设 $U$ 是 $V$ 的子集，则 $U$ 的正交补（记作 $U^{\bot}$）是由 $V$ 中与 $U$ 的每个向量都正交的那些向量组成的集合：
+
+  $$U^{\bot}=\lbrace v \in V : 对每个\;u\in U\;均有\;\langle v,u \rangle=0 \rbrace.$$
+
+- 基本性质
+
+  (a) 若 $U$ 是 $V$ 的自己，则 $U^{\bot}$ 是 $V$ 的子空间.
+
+  (b) $\lbrace 0 \rbrace^{\bot}=V$.
+
+  (c) $V^{\bot}=\lbrace 0 \rbrace$.
+
+  (d) 若 $U$ 是 $V$ 的子集，则 $U \cap U^{\bot} \subset \lbrace 0 \rbrace$.
+
+  (e) 若 $U$ 和 $W$ 均为 $V$ 的子集且 $U \subset W$，则 $W^{\bot} \subset U^{\bot}$.
+
+- 结论
+
+  - 子空间与其正交补的直和
+
+    设 $U$ 是 $V$ 的有限维子空间，则 $V=U \oplus U^{\bot}$.
+
+  - 正交补的维数
+
+    设 $V$ 是有限维的且 $U$ 是 $V$ 的子空间，则 $\dim{U^{\bot}}=\dim{V}-\dim{U}$.
+
+  - 正交补的正交补
+
+    设 $U$ 是 $V$ 的有限维子空间，则 $U=(U^{\bot})^{\bot}$.
+
+### 6.10 正交投影（orthogonal projection），$P_U$
+
+- 定义
+
+  设 $U$ 是 $V$ 的有限维子空间. 定义 $V$ 到 $U$ 上的正交投影为如下算子 $P_U \in {\cal L}(V)$：对 $v \in V$，将其写成 $v=u+w$，其中 $u \in U$ 且 $w \in U^{\bot}$，则 $P_Uv=u$.
+
+- 性质
+
+  设 $U$ 是 $V$ 的有限维子空间且 $v \in V$. 则
+
+  (a) $P_U \in {\cal L}(V)$；
+
+  (b) 对每个 $u \in U$ 均有 $P_Uu=u$；
+
+  (c) 对每个 $w \in U^{\bot}$ 均有 $P_Uw=0$；
+
+  (d) ${\rm range}\,P_U=U$；
+
+  (e) ${\rm null}\,P_U=U^{\bot}$；
+
+  (f) $v-P_Uv \in U^{\bot}$；
+
+  (g) ${P_U}^2=P_U$；
+
+  (h) $\lVert P_Uv \rVert \leq \lVert v \rVert$；
+
+  (i) 对 $U$ 的每个规范正交基 $e_1,\dots,e_m$ 均有 $P_Uv=\langle v,e_1 \rangle e_1+\cdots+\langle v,e_m \rangle e_m$.
+
+- 结论
+
+  - 到子空间的最小距离（极小化问题）
+
+    设 $U$ 是 $V$ 的有限维子空间，$v \in V$ 且 $u \in U$. 则
+
+    $$\lVert v-P_Uv \rVert \leq \lVert v-u \rVert.$$
+
+    进一步，等号成立当且仅当 $u=P_Uv$.
+
+    例：实值连续函数的实多系数多项式函数逼近问题，将实系数多项式函数构成的空间看成是实值连续函数构成的空间的子空间，然后便可以求出 $v \in V$ 在 $U$ 上的正交投影，由上面的结论表明，该结果就是最佳逼近.
+
+## 习题 6.C
+
+略
