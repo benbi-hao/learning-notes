@@ -161,6 +161,7 @@ $$
 - 简单的分治
 
   计算 $C=A\cdot B$，可以将矩阵分解
+
   $$A = 
   \left[
   \begin{matrix}
@@ -188,15 +189,13 @@ $$
 
   矩阵乘法可以改写为
 
-  $$
-  \left[
+  $$\left[
   \begin{matrix}
     C_{11} & C_{12} \\
     C_{21} & C_{22}
   \end{matrix}
   \right]
-  =
-  \left[
+  =\left[
   \begin{matrix}
     A_{11} & A_{12} \\
     A_{21} & A_{22}
@@ -208,8 +207,7 @@ $$
     B_{11} & B_{12} \\
     B_{21} & B_{22}
   \end{matrix}
-  \right]
-  $$
+  \right]$$
 
   经检验，简单的分治算法并不优于矩阵乘法定义算法。
 
