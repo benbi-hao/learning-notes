@@ -8,7 +8,7 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 
 ## 6.A 内积与范数
 
-为了说明引入内积概念的冬季，我们把 ${\bf R}^2$ 和 ${\bf R}^3$ 中的向量看作始于原点的箭头. ${\bf R}^2$ 或 ${\bf R}^3$ 中向量 $x$ 的长度称为 $x$ 的范数（norm），记为 $\lVert x \rVert$. 因此对于 $x=(x_1,x_2) \in {\bf R}^2$ 有 $\lVert x \rVert=\sqrt{{x_1}^2+{x_2}^2}$.
+为了说明引入内积概念的动机，我们把 ${\bf R}^2$ 和 ${\bf R}^3$ 中的向量看作始于原点的箭头. ${\bf R}^2$ 或 ${\bf R}^3$ 中向量 $x$ 的长度称为 $x$ 的范数（norm），记为 $\lVert x \rVert$. 因此对于 $x=(x_1,x_2) \in {\bf R}^2$ 有 $\lVert x \rVert=\sqrt{{x_1}^2+{x_2}^2}$.
 
 类似的，若 $x=(x_1,x_2,x_3) \in {\bf R}^3$，则 $\lVert x \rVert=\sqrt{{x_1}^2+{x_2}^2+{x_3}^2}$.
 
