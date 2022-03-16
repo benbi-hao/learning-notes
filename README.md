@@ -7,6 +7,7 @@
 - [算法](./algorithm)
   - [0-引言](./algorithm/0_intro.md)
   - [1-分治](./algorithm/1_divide_and_conquer.md)
+  - [2-随机算法](./algorithm/2_randomized_algorithms.md)
 - [编程](./programing)
   - [Java](./programing/java)
     - [javac和java命令](./programing/java/javac&java_command.md)
@@ -23,3 +24,4 @@
     - [3-线性映射](./mathmatics/linear_algebra/3_linear_map.md)
     - [4-多项式](./mathmatics/linear_algebra/4_polynomials.md)
 - [README.md](./README.md)
+
