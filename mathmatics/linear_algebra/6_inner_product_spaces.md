@@ -84,7 +84,7 @@ $$w_1\overline{z_1}+\cdots+w_n\overline{z_n}.$$
 
   - 共轭对称性（conjugate symmetry）
 
-    对所有 $u,v \in V$ 均有 $\langle u,v \rangle=\overline{\langle v,u \rangle}$
+    对所有 $u,v \in V$ 均有 $\langle u,v \rangle=\overline{\langle v,u \rangle}$.
 
 - 注意
 
