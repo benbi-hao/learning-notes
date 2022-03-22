@@ -49,4 +49,16 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 
   (e) 对所有 $T \in {\cal L}(V,W)$ 和 $S \in {\cal L}(W,U)$ 均有 $(ST)^*=T^*S^*$（这里 $U$ 是 ${\bf F}$ 上的内积空间）.
 
-  
+  证明略. 基本就是根据定义和内积的性质，证明对任意 $v$ 有 $\langle v, u \rangle=\langle v,u' \rangle$. 然后由里斯表示定理，$u$ 和 $u'$ 一定是同一个向量.
+
+- $T^*$ 的零空间与值域
+
+  设 $T \in {\cal L}(V,W)$. 则
+
+  (a) ${\rm null}\,T^*=({\rm range}\,T)^{\bot}$；
+
+  (b) ${\rm range}\,T^*=({\rm null}\,T)^{\bot}$；
+
+  (c) ${\rm null}\,T=({\rm range}\,T^*)^{\bot}$；
+
+  (d) ${\rm range}\,T=({\rm null}\,T^*)^{\bot}$.
