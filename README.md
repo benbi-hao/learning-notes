@@ -21,4 +21,5 @@
     - [4-多项式](./mathmatics/linear_algebra/4_polynomials.md)
     - [5-特征值、特征向量、不变子空间](./mathmatics/linear_algebra/5_eigenvalues_Eigenvectors_and_invariant_subspaces.md)
     - [6-内积空间](./mathmatics/linear_algebra/6_inner_product_spaces.md)
+    - [7-内积空间上的算子](./mathmatics/linear_algebra/7_operators_on_inner_product_spaces.md)
 - [README.md](./README.md)
