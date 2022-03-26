@@ -41,7 +41,7 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 
   (a) 对所有 $S,T \in {\cal L}(V,W)$ 均有 $(S+T)^*=S^*+T^*$；
 
-  (b) 对所有 $\lambda in {\bf F}$ 和 $T \in {\cal L}(V,W)$ 均有 $(\lambda T)^*=\bar{\lambda}T^*$；
+  (b) 对所有 $\lambda \in {\bf F}$ 和 $T \in {\cal L}(V,W)$ 均有 $(\lambda T)^*=\bar{\lambda}T^*$；
 
   (c) 对所有 $T \in {\cal L}(V,W)$ 均有 $(T^*)^*=T$；
 
@@ -122,10 +122,10 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 
     证明：对所有 $u,w \in V$ 均有
 
-    $\begin{aligned}
+    $$\begin{aligned}
     \langle Tu,w \rangle= & \frac{\langle T(u+w),u+w \rangle-\langle T(u-w),u-w \rangle}{4} \\
     & +\frac{\langle T(u+{\rm i}w),u+{\rm i}w \rangle-\langle T(u-{\rm i}w),u-{\rm i}w \rangle}{4}{\rm i}.
-    \end{aligned}$
+    \end{aligned}$$
 
     注意到右端的每一项都有 $\langle Tv,v \rangle$ 的形式. 我们的假设表明对所有 $u,w \in V$ 均有 $\langle Tu,w \rangle=0$. 从而 $T=0$（取 $w=Tu$）.
 
