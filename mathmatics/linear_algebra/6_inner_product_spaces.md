@@ -424,9 +424,9 @@ $$w_1\overline{z_1}+\cdots+w_n\overline{z_n}.$$
 
   (c) 对每个 $w \in U^{\bot}$ 均有 $P_Uw=0$；
 
-  (d) ${\rm range}\,P_U=U$；
+  (d) ${\rm range}\;P_U=U$；
 
-  (e) ${\rm null}\,P_U=U^{\bot}$；
+  (e) ${\rm null}\;P_U=U^{\bot}$；
 
   (f) $v-P_Uv \in U^{\bot}$；
 
