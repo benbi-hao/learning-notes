@@ -55,13 +55,13 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 
   设 $T \in {\cal L}(V,W)$. 则
 
-  (a) ${\rm null}\,T^*=({\rm range}\,T)^{\bot}$；
+  (a) ${\rm null}\, T^*=({\rm range}\, T)^{\bot}$；
 
-  (b) ${\rm range}\,T^*=({\rm null}\,T)^{\bot}$；
+  (b) ${\rm range}\, T^*=({\rm null}\, T)^{\bot}$；
 
-  (c) ${\rm null}\,T=({\rm range}\,T^*)^{\bot}$；
+  (c) ${\rm null}\, T=({\rm range}\, T^*)^{\bot}$；
 
-  (d) ${\rm range}\,T=({\rm null}\,T^*)^{\bot}$.
+  (d) ${\rm range}\, T=({\rm null}\, T^*)^{\bot}$.
 
   证明略.
 
