@@ -55,13 +55,13 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 
   设 $T \in {\cal L}(V,W)$. 则
 
-  (a) ${\rm null}\, T^*=({\rm range}\, T)^{\bot}$；
+  (a) ${\rm null}\;T^*=({\rm range}\;T)^{\bot}$；
 
-  (b) ${\rm range}\, T^*=({\rm null}\, T)^{\bot}$；
+  (b) ${\rm range}\;T^*=({\rm null}\;T)^{\bot}$；
 
-  (c) ${\rm null}\, T=({\rm range}\, T^*)^{\bot}$；
+  (c) ${\rm null}\;T=({\rm range}\;T^*)^{\bot}$；
 
-  (d) ${\rm range}\, T=({\rm null}\, T^*)^{\bot}$.
+  (d) ${\rm range}\;T=({\rm null}\;T^*)^{\bot}$.
 
   证明略.
 
@@ -186,7 +186,7 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
     设 $T \in {\cal L}(V)$ 是正规的. 则 $T$ 的相应于不同特征值的特征向量是正交的.
 
     证明：
-    设 $\alpha, \beta$ 是 $T$ 的不同特征值，$u,v$ 分别是相应的特征向量，于是 $Tu=\alpha u$ 且 $Tv=\beta v$. 由上一个命题有 $T*v=\bar{\beta}v$. 因此
+    设 $\alpha, \beta$ 是 $T$ 的不同特征值，$u,v$ 分别是相应的特征向量，于是 $Tu=\alpha u$ 且 $Tv=\beta v$. 由上一个命题有 $T^*v=\bar{\beta}v$. 因此
 
     $$\begin{aligned}
     (\alpha - \beta)\langle u,v \rangle & =\langle \alpha u,v \rangle - \langle u,\bar{\beta}v \rangle \\
@@ -462,7 +462,7 @@ $$z=\left(\frac{z}{|z|}\right)|z|=\left(\frac{z}{|z|}\right)\sqrt{\bar{z}z}$$
 
   $$\lVert Tv \rVert=\lVert \sqrt{T^*T}v \rVert.$$
 
-  定义线性映射 $S_1:{\rm range}\,\sqrt{T^*T} \rightarrow T$ 为
+  定义线性映射 $S_1:{\rm range}\;\sqrt{T^*T} \rightarrow T$ 为
 
   $$S_1(\sqrt{T^*T}v)=Tv.$$
 
