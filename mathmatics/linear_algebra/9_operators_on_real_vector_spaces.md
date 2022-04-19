@@ -1,4 +1,4 @@
-# 8 实向量空间上的算子
+# 9 实向量空间上的算子
 
 提醒：github显示markdown中的数学公式需要安装相应插件，插件全名为GitHub Math Display。Chrome浏览器上该插件下载地址为
 https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjiblcjagnpmdmlgmda
@@ -249,4 +249,4 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 
 ## 本章思考
 
-这章的很多笔记都是略过证明的. 因为个人对这块不是很感兴趣，想有个大致的概念就好，而且马上就要结束了. 同时在这一章里面我见识到了二维的实向量空间有多奇葩，还好我们的世界空间是三维的。
+这章的很多笔记都是略过证明的. 因为个人对这块不是很感兴趣，想有个大致的概念就好，而且马上就要结束了. 同时在这一章里面我见识到了二维的实向量空间有多奇葩，还好我们的世界空间是三维的.

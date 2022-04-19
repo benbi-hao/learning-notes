@@ -293,7 +293,7 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 
 - 定义
 
-  设 $T\in{\cal L}(V,W)$，并设 $v_1,\dots,v_n$ 是 $V$ 的基，$w_1,\dots,w_n$ 是 $W$ 的基. 规定 $T$ 关于这些基的矩阵为 $m\times n$ 矩阵 ${\cal M}(T)$，其中 $A_{j,k}$ 满足
+  设 $T\in{\cal L}(V,W)$，并设 $v_1,\dots,v_n$ 是 $V$ 的基，$w_1,\dots,w_m$ 是 $W$ 的基. 规定 $T$ 关于这些基的矩阵为 $m\times n$ 矩阵 ${\cal M}(T)$，其中 $A_{j,k}$ 满足
 
   $$Tv_k=A_{1,k}w_1+\cdots+A_{m,k}w_m.$$
 

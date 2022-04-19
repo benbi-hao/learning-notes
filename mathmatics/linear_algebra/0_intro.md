@@ -8,7 +8,7 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 
 该线代笔记参考了《Linear Algebra Done Right》<sup>[1]</sup>一书。
 
-《Linear Algebra Done Right》一书被广泛用于国外的本科生线代教学。和国内线代教材不同的是，该书更强调向量空间和线性算子等抽象概念，而非从行列式开始的对一个又一个定理的证明。
+《Linear Algebra Done Right》一书被一些国外高校用于本科生线代教学。和国内线代教材不同的是，该书更强调向量空间和线性算子等抽象概念，而非从行列式开始的对一个又一个定理的证明。
 
 我曾经是一名工科专业的本科生，在大一时就修完了高校要求工科专业必修的线性代数课程。但是本科时所修的内容让我并不满足，我希望获得对线性代数更加深刻的理解。
 
