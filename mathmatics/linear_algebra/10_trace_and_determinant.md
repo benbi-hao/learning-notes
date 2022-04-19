@@ -345,9 +345,7 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 
   设 $\Omega \subset {\bf R}^n$，$f$ 是 $\Omega$ 上的实值函数. $f$ 在 $\Omega$ 上的积分（记作 $\int_{\Omega}f$ 或 $\int_{\Omega}f(x){\rm d}x$）定义如下：将 $\Omega$ 分成足够小的小块使得 $f$ 在每个小块上几乎是常值函数，在每个小块上用 $f$ 的值（几乎是常数）乘以这个小块的体积，然后再对所有的小块求和，就得到了积分的一个近似. 对 $\Omega$ 的分块越细，这个近似就越精确.
 
-### 10.15 可微（differentiable）、导数（derivative），$\sigma'(x)$
-
-- 定义
+- 定义 可微（differentiable）、导数（derivative），$\sigma'(x)$
 
   设 $\Omega$ 是 ${\bf R}^n$ 的函数. 对于 $x \in \Omega$，称函数 $\sigma$ 在 $x$ 点可微，如果存在算子 $T \in {\cal L}({\bf R}^n)$ 使得
 
@@ -355,7 +353,7 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 
   若 $\sigma$ 在 $x$ 点可微，则称满足上式的唯一的算子 $T \in {\cal L}({\bf R}^n)$ 为 $\sigma$ 在 $x$ 点的导数，记作 $\sigma'(x)$.
 
-- 思想
+- 导数的思想
 
   导数的思想是，对固定的 $x$ 和很小的 $\Vert y \rVert$
 
@@ -401,15 +399,9 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
     可以验证，对于这个 $\sigma$，其偏导数矩阵是
 
     $$\left[\begin{matrix}
-    \sin \varphi \cos \theta &
-    \rho \cos \varphi \cos \theta &
-    -\rho \sin \varphi \sin \theta \\
-    \sin \varphi \sin \theta &
-    \rho \cos \varphi \sin \theta &
-    \rho \sin \varphi \cos \theta \\
-    \cos \varphi &
-    - \rho \sin \varphi &
-    0
+    \sin\varphi\cos\theta & \rho\cos\varphi\cos\theta & -\rho \sin \varphi \sin \theta \\
+    \sin\varphi\sin\theta & \rho\cos\varphi\sin\theta & \rho\sin\varphi\cos\theta \\
+    \cos\varphi & -\rho\sin\varphi & 0
     \end{matrix}\right],$$
 
     上面这个矩阵的行列式等于 $\rho^2\sin \varphi$，这解释了在利用球坐标计算积分时为什么会有一个因子 $\rho^2\sin \varphi$.
