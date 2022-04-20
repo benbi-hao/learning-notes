@@ -454,7 +454,7 @@ $$V=E(\lambda_1,T) \oplus \cdots \oplus E(\lambda_m,T),$$
 
   $$V=G(\lambda_1,T)\oplus\cdots\oplus G(\lambda_m,T),$$
 
-  其中每个 $(T-\lambda_j I)|_{G(\lambda_j,T)}$ 都是幂零的. 于是每个 $G(\lambda_j,T)$ 的某个基是 $(T-\lambda_j I)|_{G(\lambda_j,T)}$ 的若尔当基. 将这些基组合起来就得到了 $V$ 的一个基，并且是 $T$ 的若尔当基.
+  其中每个 $(T- \lambda_j I)|_{G(\lambda_j, T)}$ 都是幂零的. 于是每个 $G(\lambda_j,T)$ 的某个基是 $(T- \lambda_j I)|_{G(\lambda_j,T)}$ 的若尔当基. 将这些基组合起来就得到了 $V$ 的一个基，并且是 $T$ 的若尔当基.
 
   例：
   在 8.6 的例中，$T \in {\cal L}({\bf C}^3)$，$T$（关于标准基）的矩阵是
