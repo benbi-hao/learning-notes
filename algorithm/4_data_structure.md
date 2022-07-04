@@ -186,7 +186,7 @@ TREE-SEARCH(x, k)
 4       return TREE-SEARCH(x.left, k)
 5   else return TREE-SEARCH(x.right, k)
 
-// 查找（迭代）
+// 查找（迭代） O(h)
 ITERATIVE-TREE-SEARCH（x, k）
 1   while x != NIL and k != x.key
 2       if k < x.key
@@ -226,7 +226,7 @@ TREE-PREDECESSOR(x)
 6       y = y.p
 7   return y
 
-// 插入
+// 插入 O(h)
 TREE-INSERT(T, z)
 1   y = NIL
 2   x = T.root
@@ -252,7 +252,7 @@ TRANSPLANT(T, u, v)
 6   if v != NIL
 7       v.p = u.p
 
-// 删除
+// 删除 O(h)
 TREE-DELETE(T, z)
 1   if z.left == NIL
 2       TRANSPLANT(T, z, z.right)
@@ -336,7 +336,7 @@ RB-INSERT-FIXUP(T, z)
 15      else (same as then clause with "right" and "left" exchanged)
 16  T.root.color = BLACK
 
-// 插入
+// 插入 O(lgn)
 RB-INSERT(T, z)
 1   y = T.nil
 2   x = T.root
@@ -365,7 +365,7 @@ RB-TRANSPLANT(T, u, v)
 5   else u.p.right = v
 6   v.p = u.p
 
-// 删除
+// 删除 O(lgn)
 RB-DELETE(T, z)
 1   y = z
 2   y-original-color = y.color
