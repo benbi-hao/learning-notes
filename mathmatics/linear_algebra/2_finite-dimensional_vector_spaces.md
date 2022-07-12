@@ -1,9 +1,5 @@
 # 2 有限维向量空间
 
-提醒：github显示markdown中的数学公式需要安装相应插件，插件全名为GitHub Math Display。Chrome浏览器上该插件下载地址为
-https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjiblcjagnpmdmlgmda
-.
-
 ## 2.A 张成空间与线性无关
 
 ### 2.1 向量组（list of vectors）
@@ -77,7 +73,7 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 
   - 规定恒等于 $0$ 的多项式的次数为 $-\infty$.
 
-约定 ${-\infty<m}$，这意味着恒等于 $0$ 的多项式属于 ${\cal P}_m({\bf F})$.
+约定 ${-\infty}<m$，这意味着恒等于 $0$ 的多项式属于 ${\cal P}_m({\bf F})$.
 
 - 记号 ${\cal P}_m({\bf F})$
   
