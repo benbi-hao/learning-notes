@@ -1,9 +1,5 @@
 # 3 线性映射
 
-提醒：github显示markdown中的数学公式需要安装相应插件，插件全名为GitHub Math Display。Chrome浏览器上该插件下载地址为
-https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjiblcjagnpmdmlgmda
-.
-
 ## 3.A 向量空间的线性映射
 
 ### 3.1 线性映射（linear map）
@@ -55,7 +51,7 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
   设 $S,T\in {\cal L}(V,W)$，$\lambda\in {\bf F}$. 定义和 $S+T$ 与积 $\lambda T$ 是 $V$ 到 $W$ 的两个线性映射：
 
   对所有 $v\in V$ 都有
-  $$(S+T)(v)=Sv+Tv,\;\;\;\;(\lambda T)(v)=\lambda(Tv)$$
+  $$(S+T)(v)=Sv+Tv,\ \ \ \ (\lambda T)(v)=\lambda(Tv)$$
 
 - 结论
 
@@ -70,7 +66,7 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 - 定义
 
   若 $T\in{\cal L}(V,W)$，$S\in{\cal L}(V,W)$，则定义乘积 $ST\in{\cal L}(V,W)$ 如下：
-  $$对任意\;u\in U,\;\;\;\;(ST)(u)=S(Tu).$$
+  $$对任意\ u\in U,\ \ \ \ (ST)(u)=S(Tu).$$
 
 - 注意
   
@@ -96,7 +92,7 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 
   - 分配性质（distributive properties）
 
-    $$(S_1+S_2)T=S_1T+S_2T\;\;\;\;和\;\;\;\;S(T_1+T_2)=ST_1+ST_2$$
+    $$(S_1+S_2)T=S_1T+S_2T\ \ \ \ 和\ \ \ \ S(T_1+T_2)=ST_1+ST_2$$
 
     这里 $T,T_1,T_2\in {\cal L}(V,W)$，$S,S_1,S_2\in {\cal L}(V,W)$.
 
@@ -116,17 +112,17 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 
 ## 3.B 零空间与值域
 
-### 3.6 零空间（null space），${\rm null}\;T$
+### 3.6 零空间（null space），${\rm null}\ T$
 
 - 定义
 
   对于 $T\in {\cal L}(V,W)$，$T$ 的零空间（记为 ${\rm null}\;T$）是指 $V$ 中那些被 $T$ 映为 $0$ 的向量构成的子集：
 
-  $${\rm null}\;T=\lbrace v\in V:Tv=0\rbrace.$$
+  $${\rm null}\ T=\lbrace v\in V:Tv=0\rbrace.$$
 
 - 例
 
-  $T$ 是 $V$ 到 $W$ 的零映射，则 ${\rm null}\;T=V$.
+  $T$ 是 $V$ 到 $W$ 的零映射，则 ${\rm null}\ T=V$.
 
   从 ${\cal P}({\bf R})$ 到 ${\cal P}({\bf R})$ 的微分映射的零空间是常函数组成的集合.
 
@@ -138,7 +134,7 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 
   - 零空间是子空间
 
-    设 $T\in {\cal L}(V,W)$，则 ${\rm null}\;T$ 是 $V$ 的子空间.
+    设 $T\in {\cal L}(V,W)$，则 ${\rm null}\ T$ 是 $V$ 的子空间.
 
 ### 3.7 单的（injective）
 
@@ -158,7 +154,7 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 
   - 单射性等价于零空间为 $\lbrace 0\rbrace$
 
-    设 $T\in {\cal L}(V,W)$，则 $T$ 是单的当且仅当 ${\rm null}\;T=\lbrace 0\rbrace$.
+    设 $T\in {\cal L}(V,W)$，则 $T$ 是单的当且仅当 ${\rm null}\ T=\lbrace 0\rbrace$.
 
 ### 3.8 值域（range）
 
@@ -166,11 +162,11 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 
   对于 $V$ 到 $W$ 的映射 $T$，$T$ 的值域是 $W$ 中形如 $Tv$（其中 $v\in V$）的向量组成的子集：
 
-  $${\rm range}\;T=\lbrace Tv:v\in V\rbrace.$$
+  $${\rm range}\ T=\lbrace Tv:v\in V\rbrace.$$
 
 - 例
 
-  $T$ 是 $V$ 到 $W$ 的零映射，则 ${\rm range}\;T=\lbrace 0\rbrace$.
+  $T$ 是 $V$ 到 $W$ 的零映射，则 ${\rm range}\ T=\lbrace 0\rbrace$.
 
   从 ${\cal P}({\bf R})$ 到 ${\cal P}({\bf R})$ 的微分映射的值域是 ${\cal P}({\bf R})$.
 
@@ -178,7 +174,7 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 
   - 值域是一个子空间
 
-    若 $T\in {\cal L}(V,W)$，则 ${\rm range}\;T$ 是 $W$ 的子空间.
+    若 $T\in {\cal L}(V,W)$，则 ${\rm range}\ T$ 是 $W$ 的子空间.
 
     证明：
     用判定方法，检查加法恒元、加法封闭性、标量乘法封闭性。
@@ -208,9 +204,9 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 
 - 定理
 
-  设 $V$ 是有限维的，$T\in {\cal L}(V,W)$，则 ${\rm range}\;T$ 是有限维的并且
+  设 $V$ 是有限维的，$T\in {\cal L}(V,W)$，则 ${\rm range}\ T$ 是有限维的并且
 
-  $${\rm dim}\;V={\rm dim}\;{\rm null}\;T+{\rm dim}\;{\rm range}\;T.$$
+  $${\rm dim}\ V={\rm dim}\ {\rm null}\ T+{\rm dim}\ {\rm range}\ T.$$
 
 - 证明
 
@@ -220,17 +216,17 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 
   - 到更小维数向量空间的线性映射不是单的
 
-    如果 $V$ 和 $W$ 都是有限维向量空间，并且 ${\rm dim}\;V>{\rm dim}\;W$，那么 $V$ 到 $W$ 的线性映射一定不是单的.
+    如果 $V$ 和 $W$ 都是有限维向量空间，并且 ${\rm dim}\ V>{\rm dim}\ W$，那么 $V$ 到 $W$ 的线性映射一定不是单的.
 
   - 到更大维数向量空间的线性映射不是满的
 
-    如果 $V$ 和 $W$ 都是有限维向量空间，并且 ${\rm dim}\;V<{\rm dim}\;W$，那么 $V$ 到 $W$ 的线性映射一定不是满的.
+    如果 $V$ 和 $W$ 都是有限维向量空间，并且 ${\rm dim}\ V<{\rm dim}\ W$，那么 $V$ 到 $W$ 的线性映射一定不是满的.
 
 - 例
 
   - 用线性映射重述齐次线性方程组是否有非零解的问题
 
-    可以定义 $T:{\bf F}^n\rightarrow {\bf F}^m$，使得 $T(x_1,\dots,x_n)$ 和方程组一致。于是问题转化为 ${\rm null}\;T$ 是否严格大于 $\lbrace 0\rbrace$，也就是说 $T$ 是否不是单的。
+    可以定义 $T:{\bf F}^n\rightarrow {\bf F}^m$，使得 $T(x_1,\dots,x_n)$ 和方程组一致。于是问题转化为 ${\rm null}\ T$ 是否严格大于 $\lbrace 0\rbrace$，也就是说 $T$ 是否不是单的。
 
     由上面的结论可知，$n>m$ 时，$T$ 不是单的，方程组必有非零解.
 
@@ -281,7 +277,7 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 
 - 结论
 
-  - ${\rm dim}\;{\bf F}^{m,n}=mn$
+  - ${\rm dim}\ {\bf F}^{m,n}=mn$
     
     设 $m$ 和 $n$ 均为正整数. 按照上面定义的矩阵加法和标量乘法，${\bf F}^{m,n}$ 是 $mn$ 维向量空间.
 
@@ -313,8 +309,7 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 
   规定两个同样大小的矩阵的和是把矩阵中相对应的元素相加得到的矩阵：
 
-  $$
-  \left[
+  $$\left[
   \begin{matrix}
   A_{1,1} & \dots & A_{1,n} \\
   \vdots & & \vdots \\
@@ -328,20 +323,17 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
   \vdots & & \vdots \\
   C_{m,1} & \dots & C_{m,n}
   \end{matrix}
-  \right]
-  $$
+  \right]$$
 
-  $$
-  =\left[
+  $$=\left[
   \begin{matrix}
   A_{1,1}+C_{1,1} & \dots & A_{1,n}+C_{1,n} \\
   \vdots & & \vdots \\
   A_{m,1}+C_{m,1} & \dots & A_{m,n}+C_{m,n}
   \end{matrix}
-  \right].
-  $$
+  \right].$$
 
-  也就是说，$(A+C)_{j,k}=A_{j,k}+C_{j,k}.$
+  也就是说，${(A+C)}_{j,k}=A_{j,k}+C_{j,k}$.
 
 - 命题
 
@@ -357,8 +349,7 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 
   标量与矩阵的乘积就是用该标量乘以矩阵的每个元素：
 
-  $$
-  \lambda
+  $$\lambda
   \left[
   \begin{matrix}
   A_{1,1} & \dots & A_{1,n} \\
@@ -373,10 +364,9 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
   \lambda A_{m,1} & \dots & \lambda A_{m,n}
   \end{matrix}
   \right]
-  .
-  $$
+  .$$
 
-  也就是说，$(\lambda A)_{j,k}=\lambda A_{j,k}$.
+  也就是说，${(\lambda A)}_{j,k}=\lambda A_{j,k}$.
 
 - 命题
 
@@ -396,7 +386,7 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 
   设 $A$ 是 $m\times n$ 矩阵，$C$ 是 $n\times p$ 矩阵. $AC$ 定义为 $m\times n$ 矩阵，其第 $j$ 行第 $k$ 列元素是
 
-  $$(AC)_{j,k}=\sum^n_{r=1}A_{j,r}C_{r,k}.$$
+  $${(AC)}_{j,k}=\sum^{n}_{r=1}A_{j,r}C_{r,k}.$$
 
   也就是说，把 $A$ 的第 $j$ 行与 $C$ 的第 $k$ 列的对应元素相乘再求和，就得到 $AC$ 的第 $j$ 行第 $k$ 列元素.
 
@@ -422,13 +412,13 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 
     设 $A$ 是 $m\times n$ 矩阵，$C$ 是 $n\times p$ 矩阵. 则对于 $1\leq j\leq m$ 和 $1\leq k\leq p$，
 
-    $$(AC)_{j,k}=A_{j,\cdot}C_{\cdot,k}.$$
+    $${(AC)}_{j,k}=A_{j,\cdot}C_{\cdot,k}.$$
 
   下面这个结论给出了矩阵乘法的一种理解方式.
 
   - 列的线性组合
 
-    设 $A$ 是 $m\times n$ 矩阵，$c=\left[\begin{matrix}c_1 \\ \vdots \\ c_n \end{matrix} \right]$ 是 $n\times 1$ 矩阵. 则
+    设 $A$ 是 $m\times n$ 矩阵，$c=\displaystyle\left[\begin{matrix}c_1 \\ \vdots \\ c_n \end{matrix} \right]$ 是 $n\times 1$ 矩阵. 则
 
     $$Ac=c_1A_{\cdot,1}+\cdots+c_nA_{\cdot,n}.$$
 
@@ -488,11 +478,11 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 
     设 $v_1,\dots,v_n$ 是 $V$ 的基，$w_1,\dots,w_m$ 是 $W$ 的基，则 $\mathcal{M}$ 是 $\mathcal{L}(V,W)$ 与 $\mathbf{F}^{m,n}$ 之间的一个同构.
 
-  - $\mathrm{dim}\;\mathcal{L}(V,W)=(\mathrm{dim}\;V)(\mathrm{dim}\;W)$
+  - $\mathrm{dim}\ \mathcal{L}(V,W)=(\mathrm{dim}\ V)(\mathrm{dim}\ W)$
 
     设 $V$ 和 $W$ 都是有限维的，则 $\mathcal{L}(V,W)$ 是有限维的且
 
-    $$\mathrm{dim}\;\mathcal{L}(V,W)=(\mathrm{dim}\;V)(\mathrm{dim}\;W).$$
+    $$\mathrm{dim}\ \mathcal{L}(V,W)=(\mathrm{dim}\ V)(\mathrm{dim}\ W).$$
 
 ### 3.18 向量的矩阵（matrix of a vector），$\mathcal{M}(v)$
 
@@ -604,7 +594,7 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 
     设 $V_1,\dots,V_m$ 均为有限维向量空间. 则 $V_1 \times \cdots \times V_m$ 是有限维的，且
 
-    $$\mathrm{dim}(V_1 \times \cdots \times V_m)=\mathrm{dim}\;V_1 + \cdots + \mathrm{dim}\;V_m.$$
+    $$\dim(V_1 \times \cdots \times V_m)=\dim V_1 + \cdots + \dim V_m.$$
 
 - 例
 
@@ -729,23 +719,23 @@ $\pi$ 的确是线性映射，虽然 $\pi$ 同时依赖于 $U$ 和 $V$，但它�
 
     设 $V$ 是有限维的，$U$ 是 $V$ 的子空间. 则
 
-    $$\mathrm{dim}\;V/U=\mathrm{dim}\;V-\mathrm{dim}\;{U}.$$
+    $$\mathrm{dim}\ V/U=\mathrm{dim}\ V-\mathrm{dim}\ {U}.$$
 
-    证明：用之前的结论证明 $\mathrm{null}\;\pi=U$，再用线性映射基本定理即可.
+    证明：用之前的结论证明 $\mathrm{null}\ \pi=U$，再用线性映射基本定理即可.
 
-$V$ 上的每个线性映射都诱导 $V/\mathrm{null}\;T$ 上的一个线性映射 $\tilde{T}$，现在就来定义它.
+$V$ 上的每个线性映射都诱导 $V/\mathrm{null}\ T$ 上的一个线性映射 $\tilde{T}$，现在就来定义它.
 
 ### 3.27 $\tilde{T}$
 
 - 定义
 
-  设 $T \in \mathcal{V,W}$. 定义 $\tilde{T}:V/(\mathrm{null}\;T) \rightarrow W$ 如下：
+  设 $T \in \mathcal{V,W}$. 定义 $\tilde{T}:V/(\mathrm{null}\ T) \rightarrow W$ 如下：
 
-  $$\tilde{T}(v+\mathrm{null}\;T)=Tv.$$
+  $$\tilde{T}(v+\mathrm{null}\ T)=Tv.$$
 
 - 注意
 
-  为了证明上述定义是有意义的，需要先证明当 $u+\mathrm{null}\;T=v+\mathrm{null}\;T$ 时 $Tu=Tv$. 该证明略.
+  为了证明上述定义是有意义的，需要先证明当 $u+\mathrm{null}\ T=v+\mathrm{null}\ T$ 时 $Tu=Tv$. 该证明略.
 
 - 结论
 
@@ -753,23 +743,23 @@ $V$ 上的每个线性映射都诱导 $V/\mathrm{null}\;T$ 上的一个线性映
 
     设 $T \in \mathcal{L}(V,W)$. 则
 
-    (a) $\tilde{T}$ 是 $V/(\mathrm{null}\;T)$ 到 $W$ 的线性映射；
+    (a) $\tilde{T}$ 是 $V/(\mathrm{null}\ T)$ 到 $W$ 的线性映射；
 
     (b) $\tilde{T}$ 是单的；
 
-    (c) $\mathrm{range}\;\tilde{T}=\mathrm{range}\;T$；
+    (c) $\mathrm{range}\ \tilde{T}=\mathrm{range}\ T$；
 
-    (b) $V/(\mathrm{null}\;T)$ 同构于 $\mathrm{range}\;T$.
+    (b) $V/(\mathrm{null}\ T)$ 同构于 $\mathrm{range}\ T$.
 
     证明：
 
     (a) 按定义证.
 
-    (b) 设 $v \in V$，$\tilde{T}(v+\mathrm{null}\;T)=0$，则 $Tv=0$，$v\in\mathrm{null}\;T$. 由之前的结论可得 $v+\mathrm{null}\;T=0+\mathrm{null}\;T$. 这表明 $\mathrm{null}\;\tilde{T}=\lbrace 0 \rbrace$，因此是单的.
+    (b) 设 $v \in V$，$\tilde{T}(v+\mathrm{null}\ T)=0$，则 $Tv=0$，$v\in\mathrm{null}\ T$. 由之前的结论可得 $v+\mathrm{null}\ T=0+\mathrm{null}\ T$. 这表明 $\mathrm{null}\ \tilde{T}=\lbrace 0 \rbrace$，因此是单的.
 
     (c) 由定义显然.
 
-    (d) (b)和(c)表明若将 $\tilde{T}$ 视为到 $\mathrm{range}\;T$ 的映射，则 $\tilde{T}$ 可以看作一个同构.
+    (d) (b)和(c)表明若将 $\tilde{T}$ 视为到 $\mathrm{range}\ T$ 的映射，则 $\tilde{T}$ 可以看作一个同构.
 
 - 思考
 
@@ -807,9 +797,9 @@ $V$ 上的每个线性映射都诱导 $V/\mathrm{null}\;T$ 上的一个线性映
 
 - 结论
 
-  - $\mathrm{dim}\;V'=\mathrm{dim}\;V$
+  - $\dim V'=\dim V$
 
-    设 $V$ 是有限维的. 则 $V'$ 也是有限维的，且 $\mathrm{dim}\;V'=\mathrm{dim}\;V$.
+    设 $V$ 是有限维的. 则 $V'$ 也是有限维的，且 $\dim V'=\dim V$.
 
     证明：可由矩阵维数的结论得到. 
 
@@ -823,8 +813,8 @@ $V$ 上的每个线性映射都诱导 $V/\mathrm{null}\;T$ 上的一个线性映
 
     $${\varphi}_j(v_k)=
     \begin{cases}
-    1, & 当\;k=j, \\
-    0, & 当\;k\not=j.
+    1, & 当\ k=j, \\
+    0, & 当\ k\not=j.
     \end{cases}
     $$
 
@@ -890,7 +880,7 @@ $V$ 上的每个线性映射都诱导 $V/\mathrm{null}\;T$ 上的一个线性映
 
 上面结论的前两条表明将 $T$ 变为 $T'$ 的映射是 $\mathcal{L}(V,W)$ 到 $\mathcal{L}(W',V')$ 的线性映射.
 
-为了利用 $\mathrm{range}\;T$ 和 $\mathrm{null}\;T$ 来描述 $\mathrm{null}\;T'$ 和 $\mathrm{range}\;T'$. 我们需要下面的定义.
+为了利用 $\mathrm{range}\ T$ 和 $\mathrm{null}\ T$ 来描述 $\mathrm{null}\ T'$ 和 $\mathrm{range}\ T'$. 我们需要下面的定义.
 
 ### 3.32 零化子（annihilator），$U^0$
 
@@ -898,7 +888,7 @@ $V$ 上的每个线性映射都诱导 $V/\mathrm{null}\;T$ 上的一个线性映
 
   对于 $U \in V$，$U$ 的零化子（记为 $U^0$）定义如下：
 
-  $$U^0=\lbrace \varphi \in V' : 对所有\;u \in U\;都有\;\varphi(u)=0 \rbrace.$$
+  $$U^0=\lbrace \varphi \in V' : 对所有\ u \in U\ 都有\ \varphi(u)=0 \rbrace.$$
 
 - 注意
 
@@ -924,7 +914,7 @@ $V$ 上的每个线性映射都诱导 $V/\mathrm{null}\;T$ 上的一个线性映
 
     设 $V$ 是有限维的，$U$ 是 $V$ 的子空间. 则
 
-    $$\mathrm{dim}\;U+\mathrm{dim}\;U^0=\mathrm{dim}\;V.$$
+    $$\dim U+\dim U^0=\dim V.$$
 
     证明：
 
@@ -936,9 +926,9 @@ $V$ 上的每个线性映射都诱导 $V/\mathrm{null}\;T$ 上的一个线性映
 
     设 $V$ 和 $W$ 都是有限维，$T \in \mathcal{L}(V,W)$. 则
 
-    (a) $\mathrm{null}\;T'=(\mathrm{range}\;T)^0$；
+    (a) $\mathrm{null}\ T'=(\mathrm{range}\ T)^0$；
 
-    (b) $\mathrm{dim}\;\mathrm{null}\;T'=\mathrm{dim}\;\mathrm{null}\;T+\mathrm{dim}\;W-\mathrm{dim}\;V$.
+    (b) $\dim \mathrm{null}\ T'=\dim \mathrm{null}\ T+\dim W-\dim V$.
 
     证明：
 
@@ -960,9 +950,9 @@ $V$ 上的每个线性映射都诱导 $V/\mathrm{null}\;T$ 上的一个线性映
 
     设 $V$ 和 $W$ 都是有限维的，$T \in \mathcal{L}(V,W)$. 则
 
-    (a) $\mathrm{dim}\;\mathrm{range}\;T'=\mathrm{dim}\;\mathrm{range}\;T$；
+    (a) $\dim \mathrm{range}\ T'=\dim \mathrm{range}\ T$；
 
-    (b) $\mathrm{range}\;T'=(\mathrm{null}\;T)^0$.
+    (b) $\mathrm{range}\ T'={(\mathrm{null}\ T)}^0$.
 
     证明：
 
@@ -1006,7 +996,7 @@ $V$ 上的每个线性映射都诱导 $V/\mathrm{null}\;T$ 上的一个线性映
 
   矩阵 $A$ 的转置（记为 $A^{\mathrm{t}}$）是通过互换 $A$ 的行和列的角色所得到的矩阵. 确切地说，若 $A$ 是 $m \times n$ 矩阵，则 $A^{\mathrm{t}}$ 是 $n \times m$ 矩阵，其元素由下面的等式给出：
 
-  $$(A^{\mathrm{t}})_{k,j}=A_{j,k}.$$
+  $${(A^{\mathrm{t}})}_{k,j}=A_{j,k}.$$
 
 - 结论
 
@@ -1026,11 +1016,11 @@ $V$ 上的每个线性映射都诱导 $V/\mathrm{null}\;T$ 上的一个线性映
 
     由 $\mathcal{M}(T')$ 定义有
 
-    $$T'({\psi}_j)=\sum_{r=1}^nC_{r,j}{\varphi}_r.$$
+    $$T'({\psi}_{j})=\sum_{r=1}^{n}C_{r,j}{\varphi}_r.$$
 
     上式左端等于 ${\psi}_j \circ T$，于是等式两端作用到 $v_k$ 上得到
 
-    $$({\psi}_j \circ T)(v_k)=\sum_{r=1}^nC_{r,j}{\varphi}_r(v_k).$$
+    $$({\psi}_{j} \circ T)(v_k)=\sum_{r=1}^{n}C_{r,j}{\varphi}_{r}(v_k).$$
 
     上式左式等于 $A_{j,k}$，右式等于 $C_{k,j}$，得 $C_{k,j}=A_{j,k}$，于是 $C=A^{\mathrm{t}}$.
 
@@ -1048,9 +1038,9 @@ $V$ 上的每个线性映射都诱导 $V/\mathrm{null}\;T$ 上的一个线性映
 
 - 结论
 
-  - $\mathrm{range}\;T$ 的维数等于 $\mathcal{M}(T)$ 的列秩
+  - $\mathrm{range}\ T$ 的维数等于 $\mathcal{M}(T)$ 的列秩
 
-    设 $V$ 和 $W$ 都是有限维的，$T \in \mathcal{L}(V,W)$. 则 $\mathrm{dim}\;\mathrm{range}\;T$ 等于 $\mathcal{M}(T)$ 的列秩.
+    设 $V$ 和 $W$ 都是有限维的，$T \in \mathcal{L}(V,W)$. 则 $\dim \mathrm{range}\ T$ 等于 $\mathcal{M}(T)$ 的列秩.
 
   - 行秩等于列秩
 
@@ -1058,7 +1048,7 @@ $V$ 上的每个线性映射都诱导 $V/\mathrm{null}\;T$ 上的一个线性映
 
     证明：
 
-    $\mathrm{dim}\;\mathrm{range}\;T=\mathrm{dim}\;\mathrm{range}\;T'.$
+    $\dim \mathrm{range}\ T=\dim \mathrm{range}\ T'.$
 
 上述结论使得我们可以不区分“行秩”和“列秩”这两个术语，而直接使用更简单的术语“秩”.
 
