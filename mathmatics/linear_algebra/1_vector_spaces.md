@@ -40,8 +40,8 @@
   可解得
   
   $$\begin{cases}
-  \displaystyle{c=\frac{a}{a^2+b^2}},\\
-  \displaystyle{d=\frac{-b}{a^2+b^2}},\\
+  c=\displaystyle\frac{a}{a^2+b^2},\\
+  d=\displaystyle\frac{-b}{a^2+b^2},\\
   \end{cases}$$
 
   由 $\alpha\not=0$ 可得 $a,b$ 不会同时为 $0$，所以 $a^2+b^2\not=0$，所以 $c,d$ 唯一，结合复数定义可得 $\beta$ 唯一.
@@ -255,8 +255,9 @@ $$(x_1,\dots,x_n).$$
   设 $a\in {\bf F}$，$v\in V$，$av=0$. 证明 $a=0$ 或 $v=0$.
 
   证明：
-  假设 $a\not=0$ 且 $v\not=0$，等式两端乘$\displaystyle{\frac{1}{a}}$，得
-  $$\displaystyle{(\frac{1}{a})av=(\frac{1}{a})0},$$
+  假设 $a\not=0$ 且 $v\not=0$，等式两端乘$\displaystyle\frac{1}{a}$，得
+
+  $$(\displaystyle\frac{1}{a})av=(\displaystyle\frac{1}{a})0,$$
   由结合律和向量乘以 $0$ 定理，可得
   $$v=0,$$
   与假设矛盾，故假设不成立，$a=0$ 或 $v=0$.
@@ -318,7 +319,7 @@ $$(x_1,\dots,x_n).$$
   (-\infty)+(-\infty)=-\infty,
   \;\;\;\;\;\;
   \infty+(-\infty)=0.$$
-  
+
   试问 ${\bf R}\cup\lbrace\infty\rbrace\cup\lbrace-\infty\rbrace$ 是否为 ${\bf R}$ 上的向量空间？说明理由.
 
   回答：
