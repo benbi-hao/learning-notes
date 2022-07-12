@@ -297,26 +297,26 @@ $$(x_1,\dots,x_n).$$
 
   $$t\infty=
   \begin{cases}
-  -\infty,&若\;t<0,\\
-  0,&若\;t=0,\\
-  \infty,&若\;t>0,\\
+  -\infty,&若\ t<0,\\
+  0,&若\ t=0,\\
+  \infty,&若\ t>0,\\
   \end{cases}
-  \;\;\;\;\;\;
+  \ \ \ \ \ \ 
   t(-\infty)=
   \begin{cases}
-  \infty,&若\;t<0,\\
-  0,&若\;t=0,\\
-  -\infty,&若\;t>0,\\
+  \infty,&若\ t<0,\\
+  0,&若\ t=0,\\
+  -\infty,&若\ t>0,\\
   \end{cases}$$
 
   $$t+\infty=\infty+t=\infty,
-  \;\;\;\;\;\;\;\;
+  \ \ \ \ \ \ \ \ 
   t+(-\infty)=(-\infty)+t=-\infty,$$
 
   $$\infty+\infty=\infty,
-  \;\;\;\;\;\;
+  \ \ \ \ \ \ 
   (-\infty)+(-\infty)=-\infty,
-  \;\;\;\;\;\;
+  \ \ \ \ \ \ 
   \infty+(-\infty)=0.$$
   
   试问 ${\bf R}\cup\lbrace\infty\rbrace\cup\lbrace-\infty\rbrace$ 是否为 ${\bf R}$ 上的向量空间？说明理由.
