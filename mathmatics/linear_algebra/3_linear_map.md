@@ -366,7 +366,8 @@
   \right]
   .$$
 
-  也就是说，${(\lambda A)}_{j,k}=\lambda A_{j,k}$.
+  也就是说，
+  ${(\lambda A)}_{j,k}=\lambda A_{j,k}$.
 
 - 命题
 
