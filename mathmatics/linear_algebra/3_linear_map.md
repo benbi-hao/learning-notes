@@ -368,7 +368,7 @@
 
   也就是说，
 
-  ${(\lambda A)}_{j,k}=\lambda A_{j,k}$.
+  $${(\lambda A)}_{j,k}=\lambda A_{j,k}.$$
 
 - 命题
 
