@@ -1,9 +1,5 @@
 # 2 有限维向量空间
 
-提醒：github显示markdown中的数学公式需要安装相应插件，插件全名为GitHub Math Display。Chrome浏览器上该插件下载地址为
-https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjiblcjagnpmdmlgmda
-.
-
 ## 2.A 张成空间与线性无关
 
 ### 2.1 向量组（list of vectors）
@@ -70,14 +66,14 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 
 一个多项式的系数由该多项式（视作一个函数）唯一确定。因此，下面定义的多项式的次数是唯一的。
 
-### 2.7 多项式的次数（degree of a polynomial），${\rm deg}\;p$
+### 2.7 多项式的次数（degree of a polynomial），${\rm deg}\ p$
 - 定义
   - 对于多项式 $p\in{\cal P}({\bf F})$，若存在标量 $a_0,a_1,\dots,a_m\in{\bf F}$，其中 $a_m\not=0$，使得对任意 $z\in{\bf F}$ 有 $$p(z)=a_0+a_1z+\cdots+a_mz^m,$$
-  则说 $p$ 的次数为 $m$. 若 $p$ 的次数为 $m$，则记 ${\rm deg}\;p=m$.
+  则说 $p$ 的次数为 $m$. 若 $p$ 的次数为 $m$，则记 ${\rm deg}\ p=m$.
 
   - 规定恒等于 $0$ 的多项式的次数为 $-\infty$.
 
-约定 $-\infty<m$，这意味着恒等于 $0$ 的多项式属于 ${\cal P}_m({\bf F})$.
+约定 ${-\infty}<{m}$，这意味着恒等于 $0$ 的多项式属于 ${\cal P}_m({\bf F})$.
 
 - 记号 ${\cal P}_m({\bf F})$
   
@@ -94,7 +90,7 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 - 定义
   - $V$ 中一组向量 $v_1,\dots,v_m$ 称为线性无关，如果使得 $a_1v_1+\cdots+a_mv_m$ 等于 $0$ 的 $a_1,\dots,a_m\in{\bf F}$ 只有 $a_1=\cdots=a_m=0$.
 
-  - 规定空组 $(\;)$ 是线性无关的.
+  - 规定空组 $(\ )$ 是线性无关的.
 
 - 结论
   - $v_1,\dots,v_m$ 线性无关当且仅当 ${\rm span}(v_1,\dots,v_m)$ 中每个向量都可以唯一地表示成 $v_1,\dots,v_m$ 的线性组合.
@@ -179,32 +175,32 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 证明：
 由2.11中第一个结论，线性无关组长度 $\leq$ 张成组的长度. 设 $V$ 是有限维的，$B_1$ 和 $B_2$ 是 $V$ 的任意两个基，由基的定义，基既是线性无关组又是张成组，所以有 $B_1$ 长度 $\leq$ $B_2$ 长度，也有 $B_2$ 长度 $\leq$ $B_1$ 长度. 所以  $B_1$ 长度等于 $B_2$ 长度.
 
-### 2.14 维数（dimension），${\rm dim}\;V$
+### 2.14 维数（dimension），$\dim V$
 - 定义
 
   - 有限维向量空间的任意基的长度称为这个向量空间的维数.
 
-  - 若 $V$ 是有限维的，则 $V$ 的维数记为 ${\rm dim}\;V$.
+  - 若 $V$ 是有限维的，则 $V$ 的维数记为 $\dim V$.
 
 - 结论
 
   - 子空间的维数
     
-    若 $V$ 是有限维的，$U$ 是 $V$ 的子空间，则 ${\rm dim}\;U\leq{\rm dim}\;V$.
+    若 $V$ 是有限维的，$U$ 是 $V$ 的子空间，则 $\dim U\leq\dim V$.
 
   - 具有适当长度的线性无关组是基
 
-    若 $V$ 是有限维的，则 $V$ 中每个长度为 ${\rm dim}\;V$ 的线性无关向量组都是 $V$ 的基.
+    若 $V$ 是有限维的，则 $V$ 中每个长度为 $\dim V$ 的线性无关向量组都是 $V$ 的基.
 
   - 具有适当长度的张成组是基
 
-    若 $V$ 是有限维的，则 $V$ 中每个长度为 ${\rm dim}\;V$ 的张成向量组都是 $V$ 的基.
+    若 $V$ 是有限维的，则 $V$ 中每个长度为 $\dim V$ 的张成向量组都是 $V$ 的基.
 
-  上述两个结论表明，如果一个组的长度等于 ${\rm dim}\;V$，只需要满足基的定义中的一个条件就可以验证它是基.
+  上述两个结论表明，如果一个组的长度等于 $\dim V$，只需要满足基的定义中的一个条件就可以验证它是基.
 
   - 和空间的维数
 
-    如果 $U_1$ 和 $U_2$ 是有限维向量空间的两个子空间，则 $${\rm dim}(U_1+U_2)={\rm dim}\;U_1+{\rm dim}\;U_2-{\rm dim}(U_1\cap U_2).$$
+    如果 $U_1$ 和 $U_2$ 是有限维向量空间的两个子空间，则 $$\dim(U_1+U_2)=\dim U_1+\dim U_2-\dim(U_1\cap U_2).$$
 
 ## 习题 2.C
 略

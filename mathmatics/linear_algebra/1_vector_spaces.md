@@ -1,9 +1,5 @@
 # 1 向量空间
 
-提醒：github显示markdown中的数学公式需要安装相应插件，插件全名为GitHub Math Display。Chrome浏览器上该插件下载地址为
-https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjiblcjagnpmdmlgmda
-.
-
 ## 1.A ${\bf R}^n$ 与 ${\bf C}^n$
 
 ### 1.1 复数（complex number）
@@ -30,22 +26,24 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 
   证明：
   假设 $\alpha=a+b{\rm i}$，$\beta=c+d{\rm i}$，其中 $a,b,c,d\in{\bf R}$. 那么，结合复数乘法的定义可得
+
   $$\alpha\beta=(a+b{\rm i})(c+d{\rm i})$$
   $$=(ac-bd)+(ad+bc){\rm i}=1,$$
+
   可得到二元一次方程组
-  $$
-  \begin{cases}
+
+  $$\begin{cases}
   ac-bd=1,\\
   bc+ad=0,\\ 
-  \end{cases}
-  $$
+  \end{cases}$$
+
   可解得
-  $$
-  \begin{cases}
-  \displaystyle{c=\frac{a}{a^2+b^2}},\\
-  \displaystyle{d=\frac{-b}{a^2+b^2}},\\
-  \end{cases}
-  $$
+  
+  $$\begin{cases}
+  \displaystyle{c=\dfrac{a}{a^2+b^2}},\\
+  \displaystyle{d=\dfrac{-b}{a^2+b^2}},\\
+  \end{cases}$$
+
   由 $\alpha\not=0$ 可得 $a,b$ 不会同时为 $0$，所以 $a^2+b^2\not=0$，所以 $c,d$ 唯一，结合复数定义可得 $\beta$ 唯一.
 
   （在本书中的这个位置还没有提及到矩阵、行列式等概念，所以在证明方程组解唯一时，用了简单的代数消元法）
@@ -80,7 +78,7 @@ https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjibl
 
   组的长度是有限的，是一个非负整数.
 
-  长为 $0$ 的组形如 $(\;)$.
+  长为 $0$ 的组形如 $(\ )$.
 
 <!-- 设 $n$ 是非负整数. 长度为 $n$ 的组是 $n$ 个有顺序的元素，这些元素用逗号隔开并且两端用括弧括起来（这些元素可以是数、其他组或者更抽象的东西）. 长度为n的组具有如下形式：
 $$(x_1,\dots,x_n).$$
@@ -254,11 +252,11 @@ $$(x_1,\dots,x_n).$$
 
 - 2
 
-  设 $a\in{\bold F}$，$v\in V$，$av=0$. 证明 $a=0$ 或 $v=0$.
+  设 $a\in {\bf F}$，$v\in V$，$av=0$. 证明 $a=0$ 或 $v=0$.
 
   证明：
   假设 $a\not=0$ 且 $v\not=0$，等式两端乘$\displaystyle{\frac{1}{a}}$，得
-  $$\displaystyle{(\frac{1}{a})av=(\frac{1}{a})0},$$
+  $$\displaystyle{(\dfrac{1}{a})av=(\dfrac{1}{a})0},$$
   由结合律和向量乘以 $0$ 定理，可得
   $$v=0,$$
   与假设矛盾，故假设不成立，$a=0$ 或 $v=0$.
@@ -270,7 +268,7 @@ $$(x_1,\dots,x_n).$$
   证明：
   由结合律，交换律，可得
   $$3x=w+(-v),$$
-  $$\displaystyle{x=\frac{1}{3}(w+(-v))},$$
+  $$\displaystyle{x=\dfrac{1}{3}(w+(-v))},$$
   由加法逆元唯一定理，$-v$ 唯一，所以 $x$ 唯一.
 
 - 4
@@ -282,7 +280,7 @@ $$(x_1,\dots,x_n).$$
 - 5
 
   证明在向量空间的定义中，关于加法逆元的那个条件可替换为
-  $$对所有\;v\in V\;都有\;0v=0.$$
+  $$对所有\ v\in V\ 都有\ 0v=0.$$
 
   证明：
   如果证明了两个条件相互之间是充分必要关系，那两个条件就是可以相互替换的。
@@ -296,33 +294,31 @@ $$(x_1,\dots,x_n).$$
 - 6
 
   设 $\infty$ 和 $-\infty$ 是两个不同的对象，它们都不属于 ${\bf R}$. 根据记号就能猜出如何在 ${\bf R}\cup\lbrace\infty\rbrace\cup\lbrace-\infty\rbrace$ 上定义加法和标量乘法。具体来说，两个实数的加法和乘法按通常的实数运算法则定义，并且对 $t\in{\bf R}$ 定义
-  $$
-  t\infty=
+
+  $$t\infty=
   \begin{cases}
-  -\infty,&若\;t<0,\\
-  0,&若\;t=0,\\
-  \infty,&若\;t>0,\\
+  -\infty,&若\ t<0,\\
+  0,&若\ t=0,\\
+  \infty,&若\ t>0,\\
   \end{cases}
-  \;\;\;\;\;\;
+  \ \ \ \ \ \ 
   t(-\infty)=
   \begin{cases}
-  \infty,&若\;t<0,\\
-  0,&若\;t=0,\\
-  -\infty,&若\;t>0,\\
-  \end{cases} 
-  $$
-  $$
-  t+\infty=\infty+t=\infty,
-  \;\;\;\;\;\;\;\;
-  t+(-\infty)=(-\infty)+t=-\infty,
-  $$
-  $$
-  \infty+\infty=\infty,
-  \;\;\;\;\;\;
+  \infty,&若\ t<0,\\
+  0,&若\ t=0,\\
+  -\infty,&若\ t>0,\\
+  \end{cases}$$
+
+  $$t+\infty=\infty+t=\infty,
+  \ \ \ \ \ \ \ \ 
+  t+(-\infty)=(-\infty)+t=-\infty,$$
+
+  $$\infty+\infty=\infty,
+  \ \ \ \ \ \ 
   (-\infty)+(-\infty)=-\infty,
-  \;\;\;\;\;\;
-  \infty+(-\infty)=0.
-  $$
+  \ \ \ \ \ \ 
+  \infty+(-\infty)=0.$$
+  
   试问 ${\bf R}\cup\lbrace\infty\rbrace\cup\lbrace-\infty\rbrace$ 是否为 ${\bf R}$ 上的向量空间？说明理由.
 
   回答：
