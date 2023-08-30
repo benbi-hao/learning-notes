@@ -89,7 +89,7 @@ $ javac ./java/Main.java ./java/lib/Func.java
 ```
 如果有很多.java文件，不必将每个.java文件都输入，以下命令可以起到相同效果
 ```shell
-$ javac ./java/**/*.java
+$ javac $(find . -name '*.java')
 ```
 
 - 指定-sourcepath参数
