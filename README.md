@@ -25,4 +25,5 @@
     - [8-复向量空间上的算子](./mathmatics/linear_algebra/8_operators_on_complex_vector_spaces.md)
     - [9-实向量空间上的算子](./mathmatics/linear_algebra/9_operators_on_real_vector_spaces.md)
     - [10-迹与行列式](./mathmatics/linear_algebra/10_trace_and_determinant.md)
+- [工具](./tool)
 - [README.md](./README.md)
