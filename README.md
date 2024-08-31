@@ -25,5 +25,7 @@
     - [8-复向量空间上的算子](./mathmatics/linear_algebra/8_operators_on_complex_vector_spaces.md)
     - [9-实向量空间上的算子](./mathmatics/linear_algebra/9_operators_on_real_vector_spaces.md)
     - [10-迹与行列式](./mathmatics/linear_algebra/10_trace_and_determinant.md)
-- [工具](./tool)
+- [网络](./network)
+  - [https](./network/https)
+    - [https原理和实践](./network/https/https.md)
 - [README.md](./README.md)
